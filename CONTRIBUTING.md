@@ -8,14 +8,14 @@ Please read this document before opening a PR.
 
 ## Prerequisites
 
-- **Node.js** 22 — use [nvm](https://github.com/nvm-sh/nvm): `nvm install 22 && nvm use 22`
+- **Node.js** 24 — use [nvm](https://github.com/nvm-sh/nvm): `nvm install 24 && nvm use 24`
 - **pnpm** 10 — `npm i -g pnpm@latest`
 - **Git** 2.40+
 
 Verify before proceeding:
 
 ```bash
-node -v   # v22.x.x
+node -v   # v24.x.x
 pnpm -v   # 10.x.x
 ```
 
