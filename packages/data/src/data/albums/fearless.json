@@ -1,0 +1,21 @@
+{
+  "slug": "fearless",
+  "title": "Fearless",
+  "type": "studio",
+  "era": "fearless",
+  "releaseDate": "2008-11-11",
+  "producers": [],
+  "writers": [],
+  "label": "Big Machine Records",
+  "totalTracks": 19,
+  "taylorsVersion": {
+    "status": "released",
+    "taylorsVersionAlbumSlug": "fearless-tv"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

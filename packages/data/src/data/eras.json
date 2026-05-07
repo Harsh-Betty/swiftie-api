@@ -1,0 +1,141 @@
+[
+  {
+    "slug": "debut",
+    "name": "Taylor Swift",
+    "displayName": "Debut",
+    "color": "#5da982",
+    "description": "Taylor Swift's self-titled debut launched a teenage country songwriter onto the mainstream stage and set the template for autobiographical, narrative pop-country songwriting.",
+    "startDate": "2006-10-24",
+    "endDate": "2008-11-11",
+    "albumSlugs": ["debut"],
+    "iconographyKeywords": [
+      "sundress",
+      "curls",
+      "acoustic guitar",
+      "country",
+      "porch",
+      "small town"
+    ]
+  },
+  {
+    "slug": "fearless",
+    "name": "Fearless",
+    "displayName": "Fearless",
+    "color": "#c9a961",
+    "description": "Fearless cemented Swift as a generational country-pop songwriter, sweeping the Grammys with Album of the Year and producing era-defining anthems about young love and its aftermath.",
+    "startDate": "2008-11-11",
+    "endDate": "2010-10-25",
+    "albumSlugs": ["fearless", "fearless-tv"],
+    "iconographyKeywords": ["gold", "sparkle", "cowboy boots", "fairytale", "ringlets"]
+  },
+  {
+    "slug": "speak-now",
+    "name": "Speak Now",
+    "displayName": "Speak Now",
+    "color": "#9b6cb0",
+    "description": "Speak Now was written entirely by Swift herself, framed as a series of letters and confrontations she never delivered in real life.",
+    "startDate": "2010-10-25",
+    "endDate": "2012-10-22",
+    "albumSlugs": ["speak-now", "speak-now-tv"],
+    "iconographyKeywords": ["purple", "ballgown", "stage curtain", "twirl", "fairy lights"]
+  },
+  {
+    "slug": "red",
+    "name": "Red",
+    "displayName": "Red",
+    "color": "#a82828",
+    "description": "Red marked Swift's pivot away from a strict country sound, blending arena rock, folk, and the early pop production that would define her next era.",
+    "startDate": "2012-10-22",
+    "endDate": "2014-10-27",
+    "albumSlugs": ["red", "red-tv"],
+    "iconographyKeywords": ["red lip", "scarf", "autumn", "polaroid", "fedora"]
+  },
+  {
+    "slug": "1989",
+    "name": "1989",
+    "displayName": "1989",
+    "color": "#a8c8e0",
+    "description": "1989 was Swift's first official pop album, a deliberate genre move built around 1980s synth production, and won her a second Album of the Year Grammy.",
+    "startDate": "2014-10-27",
+    "endDate": "2017-11-10",
+    "albumSlugs": ["1989", "1989-tv"],
+    "iconographyKeywords": ["polaroid", "seagull", "new york", "pastel blue", "crop top"]
+  },
+  {
+    "slug": "reputation",
+    "name": "Reputation",
+    "displayName": "reputation",
+    "color": "#1a1a1a",
+    "description": "Reputation was Swift's response to a years-long public feud and tabloid backlash, leaning into a darker, electronic, and percussion-heavy sound.",
+    "startDate": "2017-11-10",
+    "endDate": "2019-08-23",
+    "albumSlugs": ["reputation"],
+    "iconographyKeywords": ["snake", "monochrome", "newsprint", "leather", "gothic"]
+  },
+  {
+    "slug": "lover",
+    "name": "Lover",
+    "displayName": "Lover",
+    "color": "#f4c2d7",
+    "description": "Lover was Swift's first album released under Republic Records and the first whose masters she owned outright, framed as a return to brighter, more romantic pop after Reputation.",
+    "startDate": "2019-08-23",
+    "endDate": "2020-07-24",
+    "albumSlugs": ["lover"],
+    "iconographyKeywords": ["pastel", "heart", "butterflies", "rainbow", "glitter"]
+  },
+  {
+    "slug": "folklore",
+    "name": "Folklore",
+    "displayName": "folklore",
+    "color": "#8a8a8a",
+    "description": "Folklore was a surprise pandemic-era release that pivoted Swift's sound into indie folk and won her a third Album of the Year Grammy.",
+    "startDate": "2020-07-24",
+    "endDate": "2020-12-11",
+    "albumSlugs": ["folklore"],
+    "iconographyKeywords": ["forest", "cardigan", "black and white", "cottagecore", "piano"]
+  },
+  {
+    "slug": "evermore",
+    "name": "Evermore",
+    "displayName": "evermore",
+    "color": "#b8732e",
+    "description": "Evermore was released five months after Folklore as its sister record, continuing the indie-folk and alternative direction with a more autumnal palette.",
+    "startDate": "2020-12-11",
+    "endDate": "2022-10-21",
+    "albumSlugs": ["evermore"],
+    "iconographyKeywords": ["braid", "amber", "leaves", "flannel", "woods"]
+  },
+  {
+    "slug": "midnights",
+    "name": "Midnights",
+    "displayName": "Midnights",
+    "color": "#1e2952",
+    "description": "Midnights returned Swift to synth-pop production with longtime collaborator Jack Antonoff and was framed as thirteen sleepless nights across her life.",
+    "startDate": "2022-10-21",
+    "endDate": "2024-04-19",
+    "albumSlugs": ["midnights"],
+    "iconographyKeywords": ["clock", "lavender", "navy", "stars", "lighter"]
+  },
+  {
+    "slug": "tortured-poets",
+    "name": "The Tortured Poets Department",
+    "displayName": "The Tortured Poets Department",
+    "color": "#d4d4d4",
+    "description": "The Tortured Poets Department was released alongside a surprise Anthology double-album expansion, leaning into stark monochrome visuals and confessional songwriting.",
+    "startDate": "2024-04-19",
+    "endDate": "2025-10-03",
+    "albumSlugs": ["tortured-poets-department"],
+    "iconographyKeywords": ["typewriter", "greyscale", "smoke", "manuscript", "monochrome"]
+  },
+  {
+    "slug": "showgirl",
+    "name": "The Life of a Showgirl",
+    "displayName": "The Life of a Showgirl",
+    "color": "#e07f3a",
+    "description": "The Life of a Showgirl marked Swift's reunion with Max Martin and Shellback and was framed around a burlesque-tinged showgirl visual identity.",
+    "startDate": "2025-10-03",
+    "endDate": null,
+    "albumSlugs": ["life-of-a-showgirl"],
+    "iconographyKeywords": ["burlesque", "feather boa", "stage lights", "orange", "rhinestone"]
+  }
+]

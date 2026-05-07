@@ -1,0 +1,21 @@
+{
+  "slug": "speak-now-tv",
+  "title": "Speak Now (Taylor's Version)",
+  "type": "taylors_version",
+  "era": "speak-now",
+  "releaseDate": "2023-07-07",
+  "producers": [],
+  "writers": [],
+  "label": "Republic Records",
+  "totalTracks": 22,
+  "taylorsVersion": {
+    "status": "not_applicable",
+    "originalAlbumSlug": "speak-now"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

@@ -1,0 +1,21 @@
+{
+  "slug": "fearless-tv",
+  "title": "Fearless (Taylor's Version)",
+  "type": "taylors_version",
+  "era": "fearless",
+  "releaseDate": "2021-04-09",
+  "producers": [],
+  "writers": [],
+  "label": "Republic Records",
+  "totalTracks": 26,
+  "taylorsVersion": {
+    "status": "not_applicable",
+    "originalAlbumSlug": "fearless"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

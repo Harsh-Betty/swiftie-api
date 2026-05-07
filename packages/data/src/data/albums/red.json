@@ -1,0 +1,21 @@
+{
+  "slug": "red",
+  "title": "Red",
+  "type": "studio",
+  "era": "red",
+  "releaseDate": "2012-10-22",
+  "producers": [],
+  "writers": [],
+  "label": "Big Machine Records",
+  "totalTracks": 16,
+  "taylorsVersion": {
+    "status": "released",
+    "taylorsVersionAlbumSlug": "red-tv"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

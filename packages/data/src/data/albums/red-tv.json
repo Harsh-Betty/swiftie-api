@@ -1,0 +1,21 @@
+{
+  "slug": "red-tv",
+  "title": "Red (Taylor's Version)",
+  "type": "taylors_version",
+  "era": "red",
+  "releaseDate": "2021-11-12",
+  "producers": [],
+  "writers": [],
+  "label": "Republic Records",
+  "totalTracks": 30,
+  "taylorsVersion": {
+    "status": "not_applicable",
+    "originalAlbumSlug": "red"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

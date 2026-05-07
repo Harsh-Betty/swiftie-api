@@ -1,0 +1,21 @@
+{
+  "slug": "1989-tv",
+  "title": "1989 (Taylor's Version)",
+  "type": "taylors_version",
+  "era": "1989",
+  "releaseDate": "2023-10-27",
+  "producers": [],
+  "writers": [],
+  "label": "Republic Records",
+  "totalTracks": 21,
+  "taylorsVersion": {
+    "status": "not_applicable",
+    "originalAlbumSlug": "1989"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

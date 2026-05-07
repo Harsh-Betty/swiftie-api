@@ -1,0 +1,21 @@
+{
+  "slug": "speak-now",
+  "title": "Speak Now",
+  "type": "studio",
+  "era": "speak-now",
+  "releaseDate": "2010-10-25",
+  "producers": [],
+  "writers": [],
+  "label": "Big Machine Records",
+  "totalTracks": 14,
+  "taylorsVersion": {
+    "status": "released",
+    "taylorsVersionAlbumSlug": "speak-now-tv"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

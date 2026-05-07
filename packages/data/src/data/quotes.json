@@ -1,0 +1,272 @@
+[
+  {
+    "id": "cruel-summer-1",
+    "text": "It's cool, that's what I tell 'em. No rules in breakable heaven.",
+    "songSlug": "cruel-summer",
+    "albumSlug": "lover",
+    "section": "Verse 1",
+    "mood": "yearning",
+    "featured": true
+  },
+  {
+    "id": "cruel-summer-2",
+    "text": "And I screamed for whatever it's worth: 'I love you,' ain't that the worst thing you ever heard?",
+    "songSlug": "cruel-summer",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "anguished",
+    "featured": true
+  },
+  {
+    "id": "cruel-summer-3",
+    "text": "He looks up grinning like a devil.",
+    "songSlug": "cruel-summer",
+    "albumSlug": "lover",
+    "section": "Pre-Chorus",
+    "mood": "infatuation",
+    "featured": false
+  },
+  {
+    "id": "lover-1",
+    "text": "We could leave the Christmas lights up 'til January.",
+    "songSlug": "lover",
+    "albumSlug": "lover",
+    "section": "Verse 1",
+    "mood": "tender",
+    "featured": true
+  },
+  {
+    "id": "lover-2",
+    "text": "Have I known you 20 seconds or 20 years?",
+    "songSlug": "lover",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "wistful",
+    "featured": true
+  },
+  {
+    "id": "lover-3",
+    "text": "My heart's been borrowed and yours has been blue.",
+    "songSlug": "lover",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "tender",
+    "featured": false
+  },
+  {
+    "id": "lover-4",
+    "text": "Ladies and gentlemen, will you please stand?",
+    "songSlug": "lover",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "ceremonial",
+    "featured": false
+  },
+  {
+    "id": "the-man-1",
+    "text": "I'm so sick of running as fast as I can, wondering if I'd get there quicker if I was a man.",
+    "songSlug": "the-man",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "defiant",
+    "featured": true
+  },
+  {
+    "id": "the-archer-1",
+    "text": "I've been the archer, I've been the prey.",
+    "songSlug": "the-archer",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "introspective",
+    "featured": true
+  },
+  {
+    "id": "the-archer-2",
+    "text": "Who could ever leave me, darling? But who could stay?",
+    "songSlug": "the-archer",
+    "albumSlug": "lover",
+    "section": "Outro",
+    "mood": "vulnerable",
+    "featured": true
+  },
+  {
+    "id": "the-archer-3",
+    "text": "All the king's horses, all the king's men couldn't put me together again.",
+    "songSlug": "the-archer",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "broken",
+    "featured": false
+  },
+  {
+    "id": "i-think-he-knows-1",
+    "text": "I think he knows.",
+    "songSlug": "i-think-he-knows",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "playful",
+    "featured": false
+  },
+  {
+    "id": "miss-americana-and-the-heartbreak-prince-1",
+    "text": "American glory faded before me.",
+    "songSlug": "miss-americana-and-the-heartbreak-prince",
+    "albumSlug": "lover",
+    "section": "Verse 1",
+    "mood": "disillusioned",
+    "featured": false
+  },
+  {
+    "id": "miss-americana-and-the-heartbreak-prince-2",
+    "text": "It's you and me, that's my whole world.",
+    "songSlug": "miss-americana-and-the-heartbreak-prince",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "devoted",
+    "featured": false
+  },
+  {
+    "id": "paper-rings-1",
+    "text": "I like shiny things, but I'd marry you with paper rings.",
+    "songSlug": "paper-rings",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "joyful",
+    "featured": true
+  },
+  {
+    "id": "cornelia-street-1",
+    "text": "And I hope I never lose you, hope it never ends. I'd never walk Cornelia Street again.",
+    "songSlug": "cornelia-street",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "wistful",
+    "featured": true
+  },
+  {
+    "id": "death-by-a-thousand-cuts-1",
+    "text": "Saying goodbye is death by a thousand cuts.",
+    "songSlug": "death-by-a-thousand-cuts",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "heartbreak",
+    "featured": false
+  },
+  {
+    "id": "london-boy-1",
+    "text": "I love my hometown as much as Motown, I love SoCal, and you know I love a London boy.",
+    "songSlug": "london-boy",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "infatuation",
+    "featured": false
+  },
+  {
+    "id": "soon-youll-get-better-1",
+    "text": "And I hate to make this all about me, but who am I supposed to talk to? What am I supposed to do if there's no you?",
+    "songSlug": "soon-youll-get-better",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "vulnerable",
+    "featured": true
+  },
+  {
+    "id": "false-god-1",
+    "text": "Religion's in your lips, even if it's a false god.",
+    "songSlug": "false-god",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "yearning",
+    "featured": false
+  },
+  {
+    "id": "you-need-to-calm-down-1",
+    "text": "You need to calm down, you're being too loud.",
+    "songSlug": "you-need-to-calm-down",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "playful",
+    "featured": false
+  },
+  {
+    "id": "you-need-to-calm-down-2",
+    "text": "'Cause shade never made anybody less gay.",
+    "songSlug": "you-need-to-calm-down",
+    "albumSlug": "lover",
+    "section": "Verse 2",
+    "mood": "defiant",
+    "featured": false
+  },
+  {
+    "id": "afterglow-1",
+    "text": "It's all me in my head. I'm the one who burned us down.",
+    "songSlug": "afterglow",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "remorseful",
+    "featured": false
+  },
+  {
+    "id": "afterglow-2",
+    "text": "Tell me that you're still mine, tell me that we'll be just fine even when I lose my mind.",
+    "songSlug": "afterglow",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "vulnerable",
+    "featured": false
+  },
+  {
+    "id": "me-1",
+    "text": "I promise that you'll never find another like me.",
+    "songSlug": "me",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "playful",
+    "featured": false
+  },
+  {
+    "id": "its-nice-to-have-a-friend-1",
+    "text": "Light pink sky up on the roof; sun sinks down, no curfew.",
+    "songSlug": "its-nice-to-have-a-friend",
+    "albumSlug": "lover",
+    "section": "Verse 2",
+    "mood": "tender",
+    "featured": false
+  },
+  {
+    "id": "daylight-1",
+    "text": "I once believed love would be black and white, but it's golden.",
+    "songSlug": "daylight",
+    "albumSlug": "lover",
+    "section": "Chorus",
+    "mood": "hopeful",
+    "featured": true
+  },
+  {
+    "id": "daylight-2",
+    "text": "I want to be defined by the things that I love, not the things I hate, not the things I'm afraid of.",
+    "songSlug": "daylight",
+    "albumSlug": "lover",
+    "section": "Outro",
+    "mood": "hopeful",
+    "featured": true
+  },
+  {
+    "id": "daylight-3",
+    "text": "And I can still see it all in my mind: all of you, all of me, intertwined.",
+    "songSlug": "daylight",
+    "albumSlug": "lover",
+    "section": "Bridge",
+    "mood": "reflective",
+    "featured": false
+  },
+  {
+    "id": "i-forgot-that-you-existed-1",
+    "text": "It isn't love, it isn't hate, it's just indifference.",
+    "songSlug": "i-forgot-that-you-existed",
+    "albumSlug": "lover",
+    "section": "Pre-Chorus",
+    "mood": "release",
+    "featured": false
+  }
+]

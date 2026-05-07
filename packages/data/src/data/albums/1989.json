@@ -1,0 +1,21 @@
+{
+  "slug": "1989",
+  "title": "1989",
+  "type": "studio",
+  "era": "1989",
+  "releaseDate": "2014-10-27",
+  "producers": [],
+  "writers": [],
+  "label": "Big Machine Records",
+  "totalTracks": 13,
+  "taylorsVersion": {
+    "status": "released",
+    "taylorsVersionAlbumSlug": "1989-tv"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

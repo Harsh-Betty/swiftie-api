@@ -1,0 +1,20 @@
+{
+  "slug": "debut",
+  "title": "Taylor Swift",
+  "type": "studio",
+  "era": "debut",
+  "releaseDate": "2006-10-24",
+  "producers": [],
+  "writers": [],
+  "label": "Big Machine Records",
+  "totalTracks": 15,
+  "taylorsVersion": {
+    "status": "unreleased"
+  },
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "",
+  "trivia": []
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "lover",
+  "title": "Lover",
+  "type": "studio",
+  "era": "lover",
+  "releaseDate": "2019-08-23",
+  "producers": ["Taylor Swift", "Jack Antonoff", "Joel Little", "Louis Bell", "Frank Dukes"],
+  "writers": [
+    "Taylor Swift",
+    "Jack Antonoff",
+    "Joel Little",
+    "Louis Bell",
+    "Frank Dukes",
+    "St. Vincent"
+  ],
+  "label": "Republic Records",
+  "totalTracks": 18,
+  "taylorsVersion": {
+    "status": "not_applicable"
+  },
+  "musicbrainzReleaseGroupId": "",
+  "coverArt": {
+    "primary": "",
+    "sources": {}
+  },
+  "description": "Lover is Taylor Swift's seventh studio album, released August 23, 2019, and her first under Republic Records. It comprises eighteen tracks produced primarily by Swift and Jack Antonoff with additional contributions from Joel Little, Louis Bell, and Frank Dukes.",
+  "trivia": []
+}
