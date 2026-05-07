@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+*.md           text diff=markdown
+*.json         text
+*.yml          text
+*.yaml         text
+*.ts           text
+*.tsx          text
+*.js           text
+*.jsx          text
+*.mjs          text
+*.cjs          text
+
+*.png          binary
+*.jpg          binary
+*.jpeg         binary
+*.gif          binary
+*.webp         binary
+*.ico          binary
+*.svg          text
+
+pnpm-lock.yaml -diff -merge linguist-generated=true
