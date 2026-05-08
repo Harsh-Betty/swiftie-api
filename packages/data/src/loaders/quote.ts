@@ -6,7 +6,7 @@ let cache: Quote[] | null = null;
 
 const QuoteArraySchema = z.array(QuoteSchema);
 
-async function getAllQuotes(): Promise<Quote[]> {
+export async function getAllQuotes(): Promise<Quote[]> {
   if (cache) return cache;
   const path: string = './data/quotes.json';
   const mod = (await import(path, { with: { type: 'json' } })) as { default: unknown };
