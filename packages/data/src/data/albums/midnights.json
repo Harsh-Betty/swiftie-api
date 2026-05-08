@@ -1,20 +1,23 @@
 {
-  "slug": "midnights",
-  "title": "Midnights",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2-33805198179_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2-33805198179_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "midnights",
-  "releaseDate": "2022-10-21",
-  "producers": [],
-  "writers": [],
   "label": "Republic Records",
-  "totalTracks": 13,
+  "musicbrainzReleaseGroupId": "0dcc84fb-c592-46e9-ba92-a52bb44dd553",
+  "producers": [],
+  "releaseDate": "2022-10-21",
+  "slug": "midnights",
   "taylorsVersion": {
     "status": "not_applicable"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "Midnights",
+  "totalTracks": 13,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

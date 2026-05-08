@@ -1,20 +1,23 @@
 {
-  "slug": "evermore",
-  "title": "evermore",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d-31907656502_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d-31907656502_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "evermore",
-  "releaseDate": "2020-12-11",
-  "producers": [],
-  "writers": [],
   "label": "Republic Records",
-  "totalTracks": 15,
+  "musicbrainzReleaseGroupId": "e86d6219-f5a2-4edd-bf2b-3f9eab190ae0",
+  "producers": [],
+  "releaseDate": "2020-12-11",
+  "slug": "evermore",
   "taylorsVersion": {
     "status": "not_applicable"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "evermore",
+  "totalTracks": 15,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

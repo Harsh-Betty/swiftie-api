@@ -48,6 +48,16 @@ If you believe something is missing or incorrectly attributed, please [open an i
 
 ---
 
+### Spotify Web API
+
+| | |
+|---|---|
+| **Link** | https://developer.spotify.com/documentation/web-api |
+| **What we use it for** | Optional cross-reference for `spotifyAlbumId`, `spotifyTrackId`, ISRCs, and a fallback cover-art URL (`coverArt.sources.spotify`). The ingestion script (`scripts/ingest.ts`) only contacts Spotify when `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` are present in the local environment; the build and the hosted API do not depend on Spotify. |
+| **License** | Subject to the [Spotify Developer Terms of Service](https://developer.spotify.com/terms). Spotify identifiers are referenced for interoperability only; no Spotify-owned content is redistributed. |
+
+---
+
 ## Libraries
 
 > This section will grow as the project matures. Key runtime dependencies will be acknowledged here once the full stack is built out (Phases 2–10).

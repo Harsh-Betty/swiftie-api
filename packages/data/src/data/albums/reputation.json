@@ -1,20 +1,23 @@
 {
-  "slug": "reputation",
-  "title": "reputation",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e-17610493930_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e-17610493930_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "reputation",
-  "releaseDate": "2017-11-10",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 15,
+  "musicbrainzReleaseGroupId": "f060c8fd-bec9-426e-800e-8efc040a71e6",
+  "producers": [],
+  "releaseDate": "2017-11-10",
+  "slug": "reputation",
   "taylorsVersion": {
     "status": "unreleased"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "reputation",
+  "totalTracks": 15,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

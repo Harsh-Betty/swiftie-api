@@ -1,20 +1,23 @@
 {
-  "slug": "life-of-a-showgirl",
-  "title": "The Life of a Showgirl",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f-43194203866_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f-43194203866_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "showgirl",
-  "releaseDate": "2025-10-03",
-  "producers": [],
-  "writers": [],
   "label": "Republic Records",
-  "totalTracks": 12,
+  "musicbrainzReleaseGroupId": "9ae7e7e9-ac40-4874-bd43-d77a9bb9b617",
+  "producers": [],
+  "releaseDate": "2025-10-03",
+  "slug": "life-of-a-showgirl",
   "taylorsVersion": {
     "status": "not_applicable"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "The Life of a Showgirl",
+  "totalTracks": 12,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

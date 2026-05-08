@@ -44,6 +44,48 @@ const albums = await client.albums.list();
 Full API reference is published at `/api/v1/docs` once the service is deployed.
 The OpenAPI schema lives in `packages/server` (@TODO: add later).
 
+## Updating data
+
+Source-of-truth JSON for albums and songs lives in `packages/data/src/data/`. The
+`pnpm ingest` script enriches those files locally from MusicBrainz, Cover Art
+Archive, and (optionally) Spotify. It never runs in CI.
+
+1. Edit the album JSON at `packages/data/src/data/albums/<slug>.json` and supply
+   `musicbrainzReleaseGroupId`. Adapters skip albums that lack an MBID.
+2. Preview the changes:
+
+   ```bash
+   pnpm ingest --albums=<slug> --dry-run --verbose
+   ```
+
+3. Apply them:
+
+   ```bash
+   pnpm ingest --albums=<slug>
+   ```
+
+4. Commit the resulting JSON diff and redeploy.
+
+If an external source returns a wrong value, add a manual override at
+`packages/data/src/data/overrides/<slug>.json`. Override files have the highest
+priority and force-overwrite any defined field:
+
+```json
+{
+  "album": { "label": "Big Machine Records" },
+  "songs": {
+    "cruel-summer": { "isrc": "USUG12000xx" }
+  }
+}
+```
+
+Spotify enrichment is optional. Copy `.env.example` to `.env` and fill
+`SPOTIFY_CLIENT_ID` / `SPOTIFY_CLIENT_SECRET` to enable it. MusicBrainz and
+Cover Art Archive require no credentials.
+
+Other useful flags: `--all` (default), `--only=musicbrainz` to run a single
+adapter.
+
 ## Roadmap
 
 See [FEATURES.md](./FEATURES.md) (@TODO: Add roadmap) for the full roadmap.

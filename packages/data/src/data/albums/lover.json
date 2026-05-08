@@ -1,10 +1,30 @@
 {
-  "slug": "lover",
-  "title": "Lover",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-35be24d2-5090-442c-aad0-581f6f0a2544/mbid-35be24d2-5090-442c-aad0-581f6f0a2544-37159614433_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-35be24d2-5090-442c-aad0-581f6f0a2544/mbid-35be24d2-5090-442c-aad0-581f6f0a2544-37159614433_thumb500.jpg"
+    }
+  },
+  "description": "Lover is Taylor Swift's seventh studio album, released August 23, 2019, and her first under Republic Records. It comprises eighteen tracks produced primarily by Swift and Jack Antonoff with additional contributions from Joel Little, Louis Bell, and Frank Dukes.",
   "era": "lover",
+  "label": "Republic Records",
+  "musicbrainzReleaseGroupId": "30e9785b-7b50-4d29-b3d1-96fb55e3397f",
+  "producers": [
+    "Taylor Swift",
+    "Jack Antonoff",
+    "Joel Little",
+    "Louis Bell",
+    "Frank Dukes"
+  ],
   "releaseDate": "2019-08-23",
-  "producers": ["Taylor Swift", "Jack Antonoff", "Joel Little", "Louis Bell", "Frank Dukes"],
+  "slug": "lover",
+  "taylorsVersion": {
+    "status": "not_applicable"
+  },
+  "title": "Lover",
+  "totalTracks": 18,
+  "trivia": [],
+  "type": "studio",
   "writers": [
     "Taylor Swift",
     "Jack Antonoff",
@@ -12,17 +32,5 @@
     "Louis Bell",
     "Frank Dukes",
     "St. Vincent"
-  ],
-  "label": "Republic Records",
-  "totalTracks": 18,
-  "taylorsVersion": {
-    "status": "not_applicable"
-  },
-  "musicbrainzReleaseGroupId": "",
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "Lover is Taylor Swift's seventh studio album, released August 23, 2019, and her first under Republic Records. It comprises eighteen tracks produced primarily by Swift and Jack Antonoff with additional contributions from Joel Little, Louis Bell, and Frank Dukes.",
-  "trivia": []
+  ]
 }

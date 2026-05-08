@@ -1,20 +1,23 @@
 {
-  "slug": "tortured-poets-department",
-  "title": "The Tortured Poets Department",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca-38321401768_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca-38321401768_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "tortured-poets",
-  "releaseDate": "2024-04-19",
-  "producers": [],
-  "writers": [],
   "label": "Republic Records",
-  "totalTracks": 16,
+  "musicbrainzReleaseGroupId": "71c3eed6-466c-4aef-ad12-65a36d19467a",
+  "producers": [],
+  "releaseDate": "2024-04-19",
+  "slug": "tortured-poets-department",
   "taylorsVersion": {
     "status": "not_applicable"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "The Tortured Poets Department",
+  "totalTracks": 16,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

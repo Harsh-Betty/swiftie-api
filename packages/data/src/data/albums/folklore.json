@@ -1,20 +1,23 @@
 {
-  "slug": "folklore",
-  "title": "folklore",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb-26803653721_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb-26803653721_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "folklore",
-  "releaseDate": "2020-07-24",
-  "producers": [],
-  "writers": [],
   "label": "Republic Records",
-  "totalTracks": 16,
+  "musicbrainzReleaseGroupId": "f1d08326-c23b-4b43-be3b-20b33ab10bf6",
+  "producers": [],
+  "releaseDate": "2020-07-24",
+  "slug": "folklore",
   "taylorsVersion": {
     "status": "not_applicable"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "folklore",
+  "totalTracks": 16,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

@@ -1,21 +1,24 @@
 {
-  "slug": "1989",
-  "title": "1989",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d-9282848916_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d-9282848916_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "1989",
-  "releaseDate": "2014-10-27",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 13,
+  "musicbrainzReleaseGroupId": "4d9ec1c2-58ec-48a4-aa0a-916718adead0",
+  "producers": [],
+  "releaseDate": "2014-10-27",
+  "slug": "1989",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "1989-tv"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "1989",
+  "totalTracks": 13,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

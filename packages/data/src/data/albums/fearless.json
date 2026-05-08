@@ -1,21 +1,24 @@
 {
-  "slug": "fearless",
-  "title": "Fearless",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a-40731862566_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a-40731862566_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "fearless",
-  "releaseDate": "2008-11-11",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 19,
+  "musicbrainzReleaseGroupId": "63eba062-847c-3b73-8b0f-6baf27bba6fa",
+  "producers": [],
+  "releaseDate": "2008-11-11",
+  "slug": "fearless",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "fearless-tv"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "Fearless",
+  "totalTracks": 19,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

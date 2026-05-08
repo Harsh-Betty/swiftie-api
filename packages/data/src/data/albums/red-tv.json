@@ -1,21 +1,24 @@
 {
-  "slug": "red-tv",
-  "title": "Red (Taylor's Version)",
-  "type": "taylors_version",
-  "era": "red",
-  "releaseDate": "2021-11-12",
-  "producers": [],
-  "writers": [],
-  "label": "Republic Records",
-  "totalTracks": 30,
-  "taylorsVersion": {
-    "status": "not_applicable",
-    "originalAlbumSlug": "red"
-  },
   "coverArt": {
-    "primary": "",
-    "sources": {}
+    "primary": "https://archive.org/download/mbid-9929d215-1001-4b53-aae8-83b92e370de8/mbid-9929d215-1001-4b53-aae8-83b92e370de8-30689160459_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-9929d215-1001-4b53-aae8-83b92e370de8/mbid-9929d215-1001-4b53-aae8-83b92e370de8-30689160459_thumb500.jpg"
+    }
   },
   "description": "",
-  "trivia": []
+  "era": "red",
+  "label": "Republic Records",
+  "musicbrainzReleaseGroupId": "67727253-f1c0-4243-9270-f9f1401c3b8c",
+  "producers": [],
+  "releaseDate": "2021-11-12",
+  "slug": "red-tv",
+  "taylorsVersion": {
+    "originalAlbumSlug": "red",
+    "status": "not_applicable"
+  },
+  "title": "Red (Taylor's Version)",
+  "totalTracks": 30,
+  "trivia": [],
+  "type": "taylors_version",
+  "writers": []
 }

@@ -1,21 +1,24 @@
 {
-  "slug": "speak-now",
-  "title": "Speak Now",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d-8900360437_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d-8900360437_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "speak-now",
-  "releaseDate": "2010-10-25",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 14,
+  "musicbrainzReleaseGroupId": "ba1259eb-d41e-41c5-a70c-0e6fa73e6708",
+  "producers": [],
+  "releaseDate": "2010-10-25",
+  "slug": "speak-now",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "speak-now-tv"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "Speak Now",
+  "totalTracks": 14,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

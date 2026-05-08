@@ -1,20 +1,23 @@
 {
-  "slug": "debut",
-  "title": "Taylor Swift",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f-30448340275_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f-30448340275_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "debut",
-  "releaseDate": "2006-10-24",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 15,
+  "musicbrainzReleaseGroupId": "ba1d0c2a-bb07-38bc-835c-a880f76f1309",
+  "producers": [],
+  "releaseDate": "2006-10-24",
+  "slug": "debut",
   "taylorsVersion": {
     "status": "unreleased"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "Taylor Swift",
+  "totalTracks": 15,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

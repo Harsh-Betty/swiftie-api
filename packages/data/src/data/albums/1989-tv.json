@@ -1,21 +1,24 @@
 {
-  "slug": "1989-tv",
-  "title": "1989 (Taylor's Version)",
-  "type": "taylors_version",
-  "era": "1989",
-  "releaseDate": "2023-10-27",
-  "producers": [],
-  "writers": [],
-  "label": "Republic Records",
-  "totalTracks": 21,
-  "taylorsVersion": {
-    "status": "not_applicable",
-    "originalAlbumSlug": "1989"
-  },
   "coverArt": {
-    "primary": "",
-    "sources": {}
+    "primary": "https://archive.org/download/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a-36783816104_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a-36783816104_thumb500.jpg"
+    }
   },
   "description": "",
-  "trivia": []
+  "era": "1989",
+  "label": "Republic Records",
+  "musicbrainzReleaseGroupId": "1c4770b3-b7a3-4d44-a7a9-8e2dbb74b85a",
+  "producers": [],
+  "releaseDate": "2023-10-27",
+  "slug": "1989-tv",
+  "taylorsVersion": {
+    "originalAlbumSlug": "1989",
+    "status": "not_applicable"
+  },
+  "title": "1989 (Taylor's Version)",
+  "totalTracks": 21,
+  "trivia": [],
+  "type": "taylors_version",
+  "writers": []
 }

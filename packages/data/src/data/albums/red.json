@@ -1,21 +1,24 @@
 {
-  "slug": "red",
-  "title": "Red",
-  "type": "studio",
+  "coverArt": {
+    "primary": "https://archive.org/download/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d-30972212603_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d-30972212603_thumb500.jpg"
+    }
+  },
+  "description": "",
   "era": "red",
-  "releaseDate": "2012-10-22",
-  "producers": [],
-  "writers": [],
   "label": "Big Machine Records",
-  "totalTracks": 16,
+  "musicbrainzReleaseGroupId": "a73cecde-0923-40ad-aad1-e8c24ba6c3d2",
+  "producers": [],
+  "releaseDate": "2012-10-22",
+  "slug": "red",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "red-tv"
   },
-  "coverArt": {
-    "primary": "",
-    "sources": {}
-  },
-  "description": "",
-  "trivia": []
+  "title": "Red",
+  "totalTracks": 16,
+  "trivia": [],
+  "type": "studio",
+  "writers": []
 }

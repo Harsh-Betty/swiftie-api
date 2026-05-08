@@ -1,21 +1,24 @@
 {
-  "slug": "fearless-tv",
-  "title": "Fearless (Taylor's Version)",
-  "type": "taylors_version",
-  "era": "fearless",
-  "releaseDate": "2021-04-09",
-  "producers": [],
-  "writers": [],
-  "label": "Republic Records",
-  "totalTracks": 26,
-  "taylorsVersion": {
-    "status": "not_applicable",
-    "originalAlbumSlug": "fearless"
-  },
   "coverArt": {
-    "primary": "",
-    "sources": {}
+    "primary": "https://archive.org/download/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd-30448620452_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd-30448620452_thumb500.jpg"
+    }
   },
   "description": "",
-  "trivia": []
+  "era": "fearless",
+  "label": "Republic Records",
+  "musicbrainzReleaseGroupId": "d2e4838d-90e1-471c-bda0-fd816dabb2d4",
+  "producers": [],
+  "releaseDate": "2021-04-09",
+  "slug": "fearless-tv",
+  "taylorsVersion": {
+    "originalAlbumSlug": "fearless",
+    "status": "not_applicable"
+  },
+  "title": "Fearless (Taylor's Version)",
+  "totalTracks": 26,
+  "trivia": [],
+  "type": "taylors_version",
+  "writers": []
 }

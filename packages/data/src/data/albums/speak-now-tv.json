@@ -1,21 +1,24 @@
 {
-  "slug": "speak-now-tv",
-  "title": "Speak Now (Taylor's Version)",
-  "type": "taylors_version",
-  "era": "speak-now",
-  "releaseDate": "2023-07-07",
-  "producers": [],
-  "writers": [],
-  "label": "Republic Records",
-  "totalTracks": 22,
-  "taylorsVersion": {
-    "status": "not_applicable",
-    "originalAlbumSlug": "speak-now"
-  },
   "coverArt": {
-    "primary": "",
-    "sources": {}
+    "primary": "https://archive.org/download/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e-35582451846_thumb500.jpg",
+    "sources": {
+      "coverArtArchive": "https://archive.org/download/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e-35582451846_thumb500.jpg"
+    }
   },
   "description": "",
-  "trivia": []
+  "era": "speak-now",
+  "label": "Republic Records",
+  "musicbrainzReleaseGroupId": "0441b1b2-de57-4a9a-b007-1f6e159921d5",
+  "producers": [],
+  "releaseDate": "2023-07-07",
+  "slug": "speak-now-tv",
+  "taylorsVersion": {
+    "originalAlbumSlug": "speak-now",
+    "status": "not_applicable"
+  },
+  "title": "Speak Now (Taylor's Version)",
+  "totalTracks": 22,
+  "trivia": [],
+  "type": "taylors_version",
+  "writers": []
 }
