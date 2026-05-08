@@ -1,344 +1,519 @@
 [
   {
-    "slug": "i-forgot-that-you-existed",
-    "title": "I Forgot That You Existed",
     "albumSlug": "lover",
-    "trackNumber": 1,
+    "discNumber": 1,
     "durationSeconds": 170,
-    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"],
-    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901471",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "f0377b50-18d9-4d7a-8bfd-5c54fea1d641",
+    "producers": [
+      "Louis Bell",
+      "Frank Dukes",
+      "Taylor Swift"
+    ],
+    "slug": "i-forgot-that-you-existed",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "I Forgot That You Existed",
+    "trackNumber": 1,
+    "writers": [
+      "Taylor Swift",
+      "Louis Bell",
+      "Frank Dukes"
+    ]
   },
   {
-    "slug": "cruel-summer",
-    "title": "Cruel Summer",
     "albumSlug": "lover",
-    "trackNumber": 2,
+    "discNumber": 1,
     "durationSeconds": 178,
-    "writers": ["Taylor Swift", "Jack Antonoff", "Annie Clark"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901472",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "f7f6fb88-e5b8-49aa-ad11-75f5416bad56",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "cruel-summer",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Cruel Summer",
+    "trackNumber": 2,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff",
+      "Annie Clark"
+    ]
   },
   {
-    "slug": "lover",
-    "title": "Lover",
     "albumSlug": "lover",
-    "trackNumber": 3,
+    "discNumber": 1,
     "durationSeconds": 221,
-    "writers": ["Taylor Swift"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": true,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901473",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "d47c6853-6877-4e83-bc88-e2341f2161a2",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "lover",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Lover",
+    "trackNumber": 3,
+    "writers": [
+      "Taylor Swift"
+    ]
   },
   {
+    "albumSlug": "lover",
+    "discNumber": 1,
+    "durationSeconds": 190,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG11901474",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "48e73fda-060c-4594-b4eb-b87d39337c14",
+    "producers": [
+      "Joel Little",
+      "Taylor Swift"
+    ],
     "slug": "the-man",
+    "spotifyTrackId": "",
+    "themes": [],
     "title": "The Man",
-    "albumSlug": "lover",
     "trackNumber": 4,
-    "durationSeconds": 190,
-    "writers": ["Taylor Swift", "Joel Little"],
-    "producers": ["Joel Little", "Taylor Swift"],
-    "features": [],
-    "isVaultTrack": false,
-    "isBonusTrack": false,
-    "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
-    "moods": [],
-    "themes": [],
-    "lyrics": { "sections": [] }
+    "writers": [
+      "Taylor Swift",
+      "Joel Little"
+    ]
   },
   {
-    "slug": "the-archer",
-    "title": "The Archer",
     "albumSlug": "lover",
-    "trackNumber": 5,
+    "discNumber": 1,
     "durationSeconds": 211,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": true,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901475",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "7cd0f41d-39a9-4061-ac91-8a25085e56d9",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "the-archer",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "The Archer",
+    "trackNumber": 5,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "i-think-he-knows",
-    "title": "I Think He Knows",
     "albumSlug": "lover",
-    "trackNumber": 6,
+    "discNumber": 1,
     "durationSeconds": 173,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901476",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "aab94ca8-0643-483c-9608-282be342a2be",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "i-think-he-knows",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "I Think He Knows",
+    "trackNumber": 6,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "miss-americana-and-the-heartbreak-prince",
-    "title": "Miss Americana & The Heartbreak Prince",
     "albumSlug": "lover",
-    "trackNumber": 7,
+    "discNumber": 1,
     "durationSeconds": 234,
-    "writers": ["Taylor Swift", "Joel Little"],
-    "producers": ["Joel Little", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901477",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "3f0e5667-d8ec-40a3-ba97-2e8d723a7dea",
+    "producers": [
+      "Joel Little",
+      "Taylor Swift"
+    ],
+    "slug": "miss-americana-and-the-heartbreak-prince",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Miss Americana & The Heartbreak Prince",
+    "trackNumber": 7,
+    "writers": [
+      "Taylor Swift",
+      "Joel Little"
+    ]
   },
   {
-    "slug": "paper-rings",
-    "title": "Paper Rings",
     "albumSlug": "lover",
-    "trackNumber": 8,
+    "discNumber": 1,
     "durationSeconds": 222,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901478",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "c1710a9c-f33a-476f-9dd9-0a13b1308556",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "paper-rings",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Paper Rings",
+    "trackNumber": 8,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "cornelia-street",
-    "title": "Cornelia Street",
     "albumSlug": "lover",
-    "trackNumber": 9,
+    "discNumber": 1,
     "durationSeconds": 287,
-    "writers": ["Taylor Swift"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901479",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "d8835358-7b9e-4aab-91da-abcb9e2c7307",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "cornelia-street",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Cornelia Street",
+    "trackNumber": 9,
+    "writers": [
+      "Taylor Swift"
+    ]
   },
   {
-    "slug": "death-by-a-thousand-cuts",
-    "title": "Death By A Thousand Cuts",
     "albumSlug": "lover",
-    "trackNumber": 10,
+    "discNumber": 1,
     "durationSeconds": 198,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901480",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "af734e30-e3d7-4e0c-9dd3-e3c8bb20d772",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "death-by-a-thousand-cuts",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Death By A Thousand Cuts",
+    "trackNumber": 10,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "london-boy",
-    "title": "London Boy",
     "albumSlug": "lover",
-    "trackNumber": 11,
+    "discNumber": 1,
     "durationSeconds": 190,
-    "writers": ["Taylor Swift", "Jack Antonoff", "Mark Spears", "Joshua Karpeh"],
-    "producers": ["Jack Antonoff", "Taylor Swift", "Sounwave"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901481",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "63255488-f91c-4db7-b5a3-cb1a0488f430",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift",
+      "Sounwave"
+    ],
+    "slug": "london-boy",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "London Boy",
+    "trackNumber": 11,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff",
+      "Mark Spears",
+      "Joshua Karpeh"
+    ]
   },
   {
-    "slug": "soon-youll-get-better",
-    "title": "Soon You'll Get Better",
     "albumSlug": "lover",
-    "trackNumber": 12,
+    "discNumber": 1,
     "durationSeconds": 202,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
-    "features": ["The Chicks"],
-    "isVaultTrack": false,
+    "features": [
+      "The Chicks"
+    ],
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
     "isrc": "",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "soon-youll-get-better",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Soon You'll Get Better",
+    "trackNumber": 12,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "false-god",
-    "title": "False God",
     "albumSlug": "lover",
-    "trackNumber": 13,
+    "discNumber": 1,
     "durationSeconds": 200,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901483",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "8bd8b8f8-71b8-4bf3-9882-91364cf36b0e",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "false-god",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "False God",
+    "trackNumber": 13,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   },
   {
-    "slug": "you-need-to-calm-down",
-    "title": "You Need To Calm Down",
     "albumSlug": "lover",
-    "trackNumber": 14,
+    "discNumber": 1,
     "durationSeconds": 171,
-    "writers": ["Taylor Swift", "Joel Little"],
-    "producers": ["Joel Little", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": true,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901470",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "b930f15a-86cb-4ea6-82a4-83b6006ef482",
+    "producers": [
+      "Joel Little",
+      "Taylor Swift"
+    ],
+    "slug": "you-need-to-calm-down",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "You Need To Calm Down",
+    "trackNumber": 14,
+    "writers": [
+      "Taylor Swift",
+      "Joel Little"
+    ]
   },
   {
-    "slug": "afterglow",
-    "title": "Afterglow",
     "albumSlug": "lover",
-    "trackNumber": 15,
+    "discNumber": 1,
     "durationSeconds": 223,
-    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"],
-    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901484",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "ed1ddba4-2754-46df-8a1c-1a417cf268bf",
+    "producers": [
+      "Louis Bell",
+      "Frank Dukes",
+      "Taylor Swift"
+    ],
+    "slug": "afterglow",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Afterglow",
+    "trackNumber": 15,
+    "writers": [
+      "Taylor Swift",
+      "Louis Bell",
+      "Frank Dukes"
+    ]
   },
   {
-    "slug": "me",
-    "title": "ME!",
     "albumSlug": "lover",
-    "trackNumber": 16,
+    "discNumber": 1,
     "durationSeconds": 193,
-    "writers": ["Taylor Swift", "Joel Little", "Brendon Urie"],
-    "producers": ["Joel Little", "Taylor Swift"],
-    "features": ["Brendon Urie"],
-    "isVaultTrack": false,
+    "features": [
+      "Brendon Urie"
+    ],
     "isBonusTrack": false,
     "isPromotionalRelease": true,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901494",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "78d336e1-02c9-4510-b2c5-6a1ea6e13ec0",
+    "producers": [
+      "Joel Little",
+      "Taylor Swift"
+    ],
+    "slug": "me",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "ME!",
+    "trackNumber": 16,
+    "writers": [
+      "Taylor Swift",
+      "Joel Little",
+      "Brendon Urie"
+    ]
   },
   {
-    "slug": "its-nice-to-have-a-friend",
-    "title": "It's Nice To Have a Friend",
     "albumSlug": "lover",
-    "trackNumber": 17,
+    "discNumber": 1,
     "durationSeconds": 150,
-    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"],
-    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
     "isrc": "",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "",
+    "producers": [
+      "Louis Bell",
+      "Frank Dukes",
+      "Taylor Swift"
+    ],
+    "slug": "its-nice-to-have-a-friend",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "It's Nice To Have a Friend",
+    "trackNumber": 17,
+    "writers": [
+      "Taylor Swift",
+      "Louis Bell",
+      "Frank Dukes"
+    ]
   },
   {
-    "slug": "daylight",
-    "title": "Daylight",
     "albumSlug": "lover",
-    "trackNumber": 18,
+    "discNumber": 1,
     "durationSeconds": 293,
-    "writers": ["Taylor Swift", "Jack Antonoff"],
-    "producers": ["Jack Antonoff", "Taylor Swift"],
     "features": [],
-    "isVaultTrack": false,
     "isBonusTrack": false,
     "isPromotionalRelease": false,
-    "musicbrainzRecordingId": "",
-    "spotifyTrackId": "",
-    "isrc": "",
+    "isrc": "USUG11901486",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
     "moods": [],
+    "musicbrainzRecordingId": "f27c7705-bae9-4fe5-834b-529c0a586eda",
+    "producers": [
+      "Jack Antonoff",
+      "Taylor Swift"
+    ],
+    "slug": "daylight",
+    "spotifyTrackId": "",
     "themes": [],
-    "lyrics": { "sections": [] }
+    "title": "Daylight",
+    "trackNumber": 18,
+    "writers": [
+      "Taylor Swift",
+      "Jack Antonoff"
+    ]
   }
 ]
