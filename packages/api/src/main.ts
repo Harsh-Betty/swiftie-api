@@ -72,6 +72,11 @@ async function bootstrap(): Promise<void> {
     .addServer('https://swiftie-api.hrshvrdhn.com', 'production')
     .addTag('health', 'Liveness and readiness probes.')
     .addTag('meta', 'API metadata and dataset counts.')
+    .addTag('albums', "Studio albums and Taylor's Versions with filtering.")
+    .addTag('songs', 'Individual songs with optional lyrics payload.')
+    .addTag('lyrics', 'Full-text lyrics search and per-song structured lyrics.')
+    .addTag('quotes', 'Curated and deterministic-daily lyric quotes.')
+    .addTag('eras', 'High-level era groupings with hydrated album listings.')
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerConfig);
