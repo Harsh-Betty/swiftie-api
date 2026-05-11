@@ -1,10 +1,15 @@
 import { applyDecorators, type Type } from '@nestjs/common';
-import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
+import { ApiExtraModels, ApiOkResponse, ApiProperty, getSchemaPath } from '@nestjs/swagger';
 
 export class PaginationMetaDto {
+  @ApiProperty({ description: 'Total number of items available, before pagination.' })
   total!: number;
-  page!: number;
-  perPage!: number;
+
+  @ApiProperty({ description: 'Limit echoed back from the request (clamped to bounds).' })
+  limit!: number;
+
+  @ApiProperty({ description: 'Offset echoed back from the request.' })
+  offset!: number;
 }
 
 /**
