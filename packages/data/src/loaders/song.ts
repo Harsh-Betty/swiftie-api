@@ -1,11 +1,20 @@
 import * as z from 'zod';
 import { ALBUM_SLUGS } from '../__generated__/album-index';
 import { type Song, SongSchema } from '../schemas/song';
+import { getAllAlbums } from './album';
 
 const albumSongsCache = new Map<string, Song[]>();
 let songSlugIndex: Map<string, string> | null = null;
 
 const SongArraySchema = z.array(SongSchema);
+
+export interface ListSongsFilter {
+  albumSlug?: string;
+  isVaultTrack?: boolean;
+  isBonusTrack?: boolean;
+  feature?: string;
+  includeTaylorsVersions?: boolean;
+}
 
 function isCommentEntry(entry: unknown): boolean {
   return typeof entry === 'object' && entry !== null && '_comment' in entry;
@@ -55,4 +64,37 @@ export async function getSong(slug: string): Promise<Song> {
     );
   }
   return song;
+}
+
+export async function getAllSongs(): Promise<Song[]> {
+  const lists = await Promise.all(ALBUM_SLUGS.map((slug) => getSongsByAlbum(slug)));
+  return lists.flat();
+}
+
+export async function listSongs(filter: ListSongsFilter = {}): Promise<Song[]> {
+  const includeTV = filter.includeTaylorsVersions ?? false;
+  const featureNeedle = filter.feature?.trim().toLowerCase();
+
+  let tvAlbumSlugs: Set<string> | null = null;
+  if (!includeTV) {
+    const albums = await getAllAlbums();
+    tvAlbumSlugs = new Set(albums.filter((a) => a.type === 'taylors_version').map((a) => a.slug));
+  }
+
+  const songs = filter.albumSlug ? await getSongsByAlbum(filter.albumSlug) : await getAllSongs();
+
+  return songs.filter((song) => {
+    if (tvAlbumSlugs?.has(song.albumSlug)) return false;
+    if (filter.isVaultTrack !== undefined && song.isVaultTrack !== filter.isVaultTrack) {
+      return false;
+    }
+    if (filter.isBonusTrack !== undefined && song.isBonusTrack !== filter.isBonusTrack) {
+      return false;
+    }
+    if (featureNeedle) {
+      const hasFeature = song.features.some((f) => f.toLowerCase().includes(featureNeedle));
+      if (!hasFeature) return false;
+    }
+    return true;
+  });
 }
