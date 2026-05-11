@@ -5,8 +5,13 @@ import { LoggerModule } from 'nestjs-pino';
 import { AppConfigModule } from './config/config.module';
 import { AppConfigService } from './config/config.service';
 import { pinoFactory } from './config/pino.factory';
+import { AlbumsModule } from './modules/albums/albums.module';
+import { ErasModule } from './modules/eras/eras.module';
 import { HealthModule } from './modules/health/health.module';
+import { LyricsModule } from './modules/lyrics/lyrics.module';
 import { MetaModule } from './modules/meta/meta.module';
+import { QuotesModule } from './modules/quotes/quotes.module';
+import { SongsModule } from './modules/songs/songs.module';
 
 @Module({
   imports: [
@@ -25,6 +30,11 @@ import { MetaModule } from './modules/meta/meta.module';
     }),
     HealthModule,
     MetaModule,
+    AlbumsModule,
+    SongsModule,
+    LyricsModule,
+    QuotesModule,
+    ErasModule,
   ],
   providers: [
     {
