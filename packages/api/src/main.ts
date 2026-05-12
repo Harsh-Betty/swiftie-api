@@ -36,7 +36,6 @@ async function bootstrap(): Promise<void> {
     new ValidationPipe({
       whitelist: true,
       transform: true,
-      transformOptions: { enableImplicitConversion: true },
     }),
   );
 
@@ -77,6 +76,10 @@ async function bootstrap(): Promise<void> {
     .addTag('lyrics', 'Full-text lyrics search and per-song structured lyrics.')
     .addTag('quotes', 'Curated and deterministic-daily lyric quotes.')
     .addTag('eras', 'High-level era groupings with hydrated album listings.')
+    .addTag(
+      'images',
+      'Album / song cover art and search-based images from Cover Art Archive, Spotify, Pexels, Unsplash, and Reddit.',
+    )
     .build();
 
   const document = SwaggerModule.createDocument(app, swaggerConfig);

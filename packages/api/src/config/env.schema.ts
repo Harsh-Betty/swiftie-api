@@ -14,6 +14,14 @@ export const EnvSchema = z.object({
   REDDIT_CLIENT_ID: z.string().min(1).optional(),
   REDDIT_CLIENT_SECRET: z.string().min(1).optional(),
   REDDIT_USER_AGENT: z.string().min(1).optional(),
+  REDDIT_SUBREDDITS: z
+    .string()
+    .min(1)
+    .default('TaylorSwift,SwiftieMerch,YouBelongWithMemes')
+    .refine(
+      (s) => s.split(',').some((x) => x.trim().length > 0),
+      'REDDIT_SUBREDDITS must contain at least one non-empty subreddit name.',
+    ),
 });
 
 export type Env = z.infer<typeof EnvSchema>;

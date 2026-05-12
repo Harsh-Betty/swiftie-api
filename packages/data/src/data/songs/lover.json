@@ -13,21 +13,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "f0377b50-18d9-4d7a-8bfd-5c54fea1d641",
-    "producers": [
-      "Louis Bell",
-      "Frank Dukes",
-      "Taylor Swift"
-    ],
+    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "slug": "i-forgot-that-you-existed",
     "spotifyTrackId": "",
     "themes": [],
     "title": "I Forgot That You Existed",
     "trackNumber": 1,
-    "writers": [
-      "Taylor Swift",
-      "Louis Bell",
-      "Frank Dukes"
-    ]
+    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"]
   },
   {
     "albumSlug": "lover",
@@ -43,20 +35,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "f7f6fb88-e5b8-49aa-ad11-75f5416bad56",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "cruel-summer",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Cruel Summer",
     "trackNumber": 2,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff",
-      "Annie Clark"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff", "Annie Clark"]
   },
   {
     "albumSlug": "lover",
@@ -72,18 +57,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "d47c6853-6877-4e83-bc88-e2341f2161a2",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "lover",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Lover",
     "trackNumber": 3,
-    "writers": [
-      "Taylor Swift"
-    ]
+    "writers": ["Taylor Swift"]
   },
   {
     "albumSlug": "lover",
@@ -99,19 +79,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "48e73fda-060c-4594-b4eb-b87d39337c14",
-    "producers": [
-      "Joel Little",
-      "Taylor Swift"
-    ],
+    "producers": ["Joel Little", "Taylor Swift"],
     "slug": "the-man",
     "spotifyTrackId": "",
     "themes": [],
     "title": "The Man",
     "trackNumber": 4,
-    "writers": [
-      "Taylor Swift",
-      "Joel Little"
-    ]
+    "writers": ["Taylor Swift", "Joel Little"]
   },
   {
     "albumSlug": "lover",
@@ -127,19 +101,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "7cd0f41d-39a9-4061-ac91-8a25085e56d9",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "the-archer",
     "spotifyTrackId": "",
     "themes": [],
     "title": "The Archer",
     "trackNumber": 5,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -155,19 +123,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "aab94ca8-0643-483c-9608-282be342a2be",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "i-think-he-knows",
     "spotifyTrackId": "",
     "themes": [],
     "title": "I Think He Knows",
     "trackNumber": 6,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -183,19 +145,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "3f0e5667-d8ec-40a3-ba97-2e8d723a7dea",
-    "producers": [
-      "Joel Little",
-      "Taylor Swift"
-    ],
+    "producers": ["Joel Little", "Taylor Swift"],
     "slug": "miss-americana-and-the-heartbreak-prince",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Miss Americana & The Heartbreak Prince",
     "trackNumber": 7,
-    "writers": [
-      "Taylor Swift",
-      "Joel Little"
-    ]
+    "writers": ["Taylor Swift", "Joel Little"]
   },
   {
     "albumSlug": "lover",
@@ -211,19 +167,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "c1710a9c-f33a-476f-9dd9-0a13b1308556",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "paper-rings",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Paper Rings",
     "trackNumber": 8,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -239,18 +189,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "d8835358-7b9e-4aab-91da-abcb9e2c7307",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "cornelia-street",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Cornelia Street",
     "trackNumber": 9,
-    "writers": [
-      "Taylor Swift"
-    ]
+    "writers": ["Taylor Swift"]
   },
   {
     "albumSlug": "lover",
@@ -266,19 +211,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "af734e30-e3d7-4e0c-9dd3-e3c8bb20d772",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "death-by-a-thousand-cuts",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Death By A Thousand Cuts",
     "trackNumber": 10,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -294,30 +233,19 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "63255488-f91c-4db7-b5a3-cb1a0488f430",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift",
-      "Sounwave"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift", "Sounwave"],
     "slug": "london-boy",
     "spotifyTrackId": "",
     "themes": [],
     "title": "London Boy",
     "trackNumber": 11,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff",
-      "Mark Spears",
-      "Joshua Karpeh"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff", "Mark Spears", "Joshua Karpeh"]
   },
   {
     "albumSlug": "lover",
     "discNumber": 1,
     "durationSeconds": 202,
-    "features": [
-      "The Chicks"
-    ],
+    "features": ["The Chicks"],
     "isBonusTrack": false,
     "isPromotionalRelease": false,
     "isrc": "",
@@ -327,19 +255,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "soon-youll-get-better",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Soon You'll Get Better",
     "trackNumber": 12,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -355,19 +277,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "8bd8b8f8-71b8-4bf3-9882-91364cf36b0e",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "false-god",
     "spotifyTrackId": "",
     "themes": [],
     "title": "False God",
     "trackNumber": 13,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   },
   {
     "albumSlug": "lover",
@@ -383,19 +299,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "b930f15a-86cb-4ea6-82a4-83b6006ef482",
-    "producers": [
-      "Joel Little",
-      "Taylor Swift"
-    ],
+    "producers": ["Joel Little", "Taylor Swift"],
     "slug": "you-need-to-calm-down",
     "spotifyTrackId": "",
     "themes": [],
     "title": "You Need To Calm Down",
     "trackNumber": 14,
-    "writers": [
-      "Taylor Swift",
-      "Joel Little"
-    ]
+    "writers": ["Taylor Swift", "Joel Little"]
   },
   {
     "albumSlug": "lover",
@@ -411,29 +321,19 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "ed1ddba4-2754-46df-8a1c-1a417cf268bf",
-    "producers": [
-      "Louis Bell",
-      "Frank Dukes",
-      "Taylor Swift"
-    ],
+    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "slug": "afterglow",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Afterglow",
     "trackNumber": 15,
-    "writers": [
-      "Taylor Swift",
-      "Louis Bell",
-      "Frank Dukes"
-    ]
+    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"]
   },
   {
     "albumSlug": "lover",
     "discNumber": 1,
     "durationSeconds": 193,
-    "features": [
-      "Brendon Urie"
-    ],
+    "features": ["Brendon Urie"],
     "isBonusTrack": false,
     "isPromotionalRelease": true,
     "isrc": "USUG11901494",
@@ -443,20 +343,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "78d336e1-02c9-4510-b2c5-6a1ea6e13ec0",
-    "producers": [
-      "Joel Little",
-      "Taylor Swift"
-    ],
+    "producers": ["Joel Little", "Taylor Swift"],
     "slug": "me",
     "spotifyTrackId": "",
     "themes": [],
     "title": "ME!",
     "trackNumber": 16,
-    "writers": [
-      "Taylor Swift",
-      "Joel Little",
-      "Brendon Urie"
-    ]
+    "writers": ["Taylor Swift", "Joel Little", "Brendon Urie"]
   },
   {
     "albumSlug": "lover",
@@ -472,21 +365,13 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "",
-    "producers": [
-      "Louis Bell",
-      "Frank Dukes",
-      "Taylor Swift"
-    ],
+    "producers": ["Louis Bell", "Frank Dukes", "Taylor Swift"],
     "slug": "its-nice-to-have-a-friend",
     "spotifyTrackId": "",
     "themes": [],
     "title": "It's Nice To Have a Friend",
     "trackNumber": 17,
-    "writers": [
-      "Taylor Swift",
-      "Louis Bell",
-      "Frank Dukes"
-    ]
+    "writers": ["Taylor Swift", "Louis Bell", "Frank Dukes"]
   },
   {
     "albumSlug": "lover",
@@ -502,18 +387,12 @@
     },
     "moods": [],
     "musicbrainzRecordingId": "f27c7705-bae9-4fe5-834b-529c0a586eda",
-    "producers": [
-      "Jack Antonoff",
-      "Taylor Swift"
-    ],
+    "producers": ["Jack Antonoff", "Taylor Swift"],
     "slug": "daylight",
     "spotifyTrackId": "",
     "themes": [],
     "title": "Daylight",
     "trackNumber": 18,
-    "writers": [
-      "Taylor Swift",
-      "Jack Antonoff"
-    ]
+    "writers": ["Taylor Swift", "Jack Antonoff"]
   }
 ]

@@ -11,7 +11,7 @@ import {
 } from '@nestjs/swagger';
 import { EraDetailResponseDto } from './dto/era-detail-response.dto';
 import { EraResponseDto } from './dto/era-response.dto';
-import type { ErasService } from './eras.service';
+import { ErasService } from './eras.service';
 
 @ApiTags('eras')
 @ApiTooManyRequestsResponse({ description: 'Throttle quota exceeded.' })

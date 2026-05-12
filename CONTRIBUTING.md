@@ -116,14 +116,16 @@ Image providers live in:
 packages/api/src/modules/images/providers/
 ```
 
-Every provider implements the `ImageProvider` interface defined in `image-provider.interface.ts`. Adding a new source is four steps with no shared code to modify:
+Every provider is a NestJS `@Injectable()` that implements the `ImageProvider` interface from `image-provider.interface.ts`. Adding a new source is four mechanical steps — no shared code is mutated:
 
-1. **Create the provider file** — copy `cover-art-archive.provider.ts` as a template. Implement `id`, `displayName`, `requiresCredentials`, `isAvailable()`, and `fetch()`.
-2. **Register it** — add one line to `provider-registry.ts`.
-3. **Add env var(s)** — add any new credential fields to `packages/api/src/config/env.schema.ts`.
-4. **Extend the DTO enum** — add your provider's id to the `source` field in `image-query.dto.ts`.
+1. **Create the provider file** — copy `cover-art-archive.provider.ts` as a template. Implement `id`, `missingEnv`, `supportsSearch`, `isAvailable()`, and `fetch()`. Use the `HttpClient` wrapper in `../http/http.client.ts` for outbound calls and the shared `LruCacheService` for response caching. Keep the file under 150 lines — push OAuth token caches and other helpers into a sibling subfolder (see `spotify/token-cache.ts`).
+2. **Add env var(s)** — extend `packages/api/src/config/env.schema.ts`, the `providers` getter in `packages/api/src/config/config.service.ts`, and `.env.example`.
+3. **Register it** — append the new class to two lists in `packages/api/src/modules/images/providers/provider-registry.ts`: `IMAGE_PROVIDER_CLASSES` and (if applicable) `AUTO_SOURCE_PRIORITY`. The module wiring picks them up automatically.
+4. **Extend the DTO enum** — add the new source to `ImageSourceEnum` and `SOURCE_TO_PROVIDER_ID` in `image-query.dto.ts`.
 
-Write a unit test in `<your-provider>.provider.spec.ts` covering `isAvailable()` with env stubbed both ways, and one happy-path `fetch()` call with a mocked HTTP response.
+Write a unit test in `<your-provider>.provider.spec.ts` covering `isAvailable()` with env stubbed both ways, and one happy-path `fetch()` call with a mocked HTTP response — see `cover-art-archive.provider.spec.ts` for the simplest template.
+
+> The 503 you get back when calling an unconfigured source carries a `details` array listing which env vars are missing and which providers are currently available. That keeps debugging deploys cheap.
 
 ---
 

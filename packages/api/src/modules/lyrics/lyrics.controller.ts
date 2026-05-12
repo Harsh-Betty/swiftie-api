@@ -10,9 +10,9 @@ import {
   ApiTooManyRequestsResponse,
 } from '@nestjs/swagger';
 import { LyricsResponseDto } from './dto/lyrics-response.dto';
-import type { LyricsSearchQueryDto } from './dto/lyrics-search-query.dto';
+import { LyricsSearchQueryDto } from './dto/lyrics-search-query.dto';
 import { LyricsSearchResultDto } from './dto/lyrics-search-result.dto';
-import type { LyricsService } from './lyrics.service';
+import { LyricsService } from './lyrics.service';
 
 @ApiTags('lyrics')
 @ApiTooManyRequestsResponse({ description: 'Throttle quota exceeded.' })

@@ -5,6 +5,9 @@ import { PaginationQueryDto } from '../../../common/dto/pagination-query.dto';
 
 const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
+const toBool = ({ value }: { value: unknown }): unknown =>
+  value === 'true' ? true : value === 'false' ? false : value;
+
 export enum AlbumTypeEnum {
   Studio = 'studio',
   TaylorsVersion = 'taylors_version',
@@ -45,6 +48,6 @@ export class ListAlbumsQueryDto extends PaginationQueryDto {
   })
   @IsOptional()
   @IsBoolean()
-  @Transform(({ value }) => value === 'true')
+  @Transform(toBool)
   includeTaylorsVersions?: boolean = false;
 }

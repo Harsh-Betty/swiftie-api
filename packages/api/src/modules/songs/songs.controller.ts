@@ -10,10 +10,10 @@ import {
   ApiTooManyRequestsResponse,
 } from '@nestjs/swagger';
 import { ApiPaginatedResponse } from '../../common/decorators/api-paginated-response.decorator';
-import type { GetSongQueryDto } from './dto/get-song-query.dto';
-import type { ListSongsQueryDto } from './dto/list-songs-query.dto';
+import { GetSongQueryDto } from './dto/get-song-query.dto';
+import { ListSongsQueryDto } from './dto/list-songs-query.dto';
 import { SongResponseDto } from './dto/song-response.dto';
-import type { SongsService } from './songs.service';
+import { SongsService } from './songs.service';
 
 @ApiTags('songs')
 @ApiTooManyRequestsResponse({ description: 'Throttle quota exceeded.' })

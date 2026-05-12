@@ -8,6 +8,7 @@ import { pinoFactory } from './config/pino.factory';
 import { AlbumsModule } from './modules/albums/albums.module';
 import { ErasModule } from './modules/eras/eras.module';
 import { HealthModule } from './modules/health/health.module';
+import { ImagesModule } from './modules/images/images.module';
 import { LyricsModule } from './modules/lyrics/lyrics.module';
 import { MetaModule } from './modules/meta/meta.module';
 import { QuotesModule } from './modules/quotes/quotes.module';
@@ -35,6 +36,7 @@ import { SongsModule } from './modules/songs/songs.module';
     LyricsModule,
     QuotesModule,
     ErasModule,
+    ImagesModule,
   ],
   providers: [
     {

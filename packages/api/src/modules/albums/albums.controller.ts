@@ -11,9 +11,9 @@ import {
 } from '@nestjs/swagger';
 import { ApiPaginatedResponse } from '../../common/decorators/api-paginated-response.decorator';
 import { SongResponseDto } from '../songs/dto/song-response.dto';
-import type { AlbumsService } from './albums.service';
+import { AlbumsService } from './albums.service';
 import { AlbumResponseDto } from './dto/album-response.dto';
-import type { ListAlbumsQueryDto } from './dto/list-albums-query.dto';
+import { ListAlbumsQueryDto } from './dto/list-albums-query.dto';
 
 @ApiTags('albums')
 @ApiTooManyRequestsResponse({ description: 'Throttle quota exceeded.' })

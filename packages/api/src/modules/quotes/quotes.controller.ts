@@ -7,10 +7,10 @@ import {
   ApiTags,
   ApiTooManyRequestsResponse,
 } from '@nestjs/swagger';
-import type { DailyQuoteQueryDto } from './dto/daily-quote-query.dto';
-import type { ListQuotesQueryDto } from './dto/list-quotes-query.dto';
+import { DailyQuoteQueryDto } from './dto/daily-quote-query.dto';
+import { ListQuotesQueryDto } from './dto/list-quotes-query.dto';
 import { QuoteResponseDto } from './dto/quote-response.dto';
-import type { QuotesService } from './quotes.service';
+import { QuotesService } from './quotes.service';
 
 @ApiTags('quotes')
 @ApiTooManyRequestsResponse({ description: 'Throttle quota exceeded.' })

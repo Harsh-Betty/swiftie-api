@@ -42,6 +42,6 @@ export class ListSongsQueryDto extends PaginationQueryDto {
   })
   @IsOptional()
   @IsBoolean()
-  @Transform(({ value }) => value === 'true')
+  @Transform(toBool)
   includeTaylorsVersions?: boolean = false;
 }

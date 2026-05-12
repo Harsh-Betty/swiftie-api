@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-// biome-ignore lint/style/useImportType: NestJS requires this at runtime for DI
 import { ConfigService } from '@nestjs/config';
 import type { Env } from './env.schema';
 
@@ -20,6 +19,7 @@ export interface RedditCredentials {
   clientId: string;
   clientSecret: string;
   userAgent: string;
+  subreddits: string[];
 }
 
 export interface ProviderCredentials {
@@ -57,6 +57,10 @@ export class AppConfigService {
     const redditId = this.get('REDDIT_CLIENT_ID');
     const redditSecret = this.get('REDDIT_CLIENT_SECRET');
     const redditUa = this.get('REDDIT_USER_AGENT');
+    const redditSubs = this.get('REDDIT_SUBREDDITS')
+      .split(',')
+      .map((s) => s.trim())
+      .filter(Boolean);
 
     return {
       spotify:
@@ -65,7 +69,12 @@ export class AppConfigService {
       unsplash: unsplashKey ? { accessKey: unsplashKey } : null,
       reddit:
         redditId && redditSecret && redditUa
-          ? { clientId: redditId, clientSecret: redditSecret, userAgent: redditUa }
+          ? {
+              clientId: redditId,
+              clientSecret: redditSecret,
+              userAgent: redditUa,
+              subreddits: redditSubs,
+            }
           : null,
     };
   }

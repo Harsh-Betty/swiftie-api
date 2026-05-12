@@ -93,6 +93,34 @@
           }
         }
       }
+    },
+    {
+      "includes": [
+        "packages/api/src/**/*.service.ts",
+        "packages/api/src/**/*.controller.ts",
+        "packages/api/src/**/*.module.ts",
+        "packages/api/src/**/*.provider.ts",
+        "packages/api/src/**/*.interceptor.ts",
+        "packages/api/src/**/*.filter.ts",
+        "packages/api/src/**/*.factory.ts"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useImportType": "off"
+          }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.spec.ts"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noNonNullAssertion": "off"
+          }
+        }
+      }
     }
   ]
 }
