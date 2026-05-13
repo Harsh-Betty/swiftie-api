@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca-38321401768_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca-38321401768_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca/mbid-615ddd12-afb7-4c9c-8e2c-88efc96734ca-38321401768_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b2735076e4160d018e378f488c33"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2024-04-19",
   "slug": "tortured-poets-department",
+  "spotifyAlbumId": "1Mo4aZ8pdj6L1jx8zSwJnt",
   "taylorsVersion": {
     "status": "not_applicable"
   },

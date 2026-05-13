@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb-26803653721_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb-26803653721_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb/mbid-0ca6db69-0719-4a00-99be-f87ef1cff6cb-26803653721_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b27395f754318336a07e85ec59bc"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2020-07-24",
   "slug": "folklore",
+  "spotifyAlbumId": "2fenSS68JI1h4Fo296JfGr",
   "taylorsVersion": {
     "status": "not_applicable"
   },

@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f-30448340275_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f-30448340275_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f/mbid-b041a1fb-165f-4a78-a5f4-19dbfc4c480f-30448340275_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273c909d4e47de2ab0636f46d64"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2006-10-24",
   "slug": "debut",
+  "spotifyAlbumId": "5eyZZoQEFQWRHkV2xgAeBw",
   "taylorsVersion": {
     "status": "unreleased"
   },

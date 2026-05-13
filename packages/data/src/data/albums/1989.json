@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d-9282848916_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d-9282848916_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d/mbid-d5cb50d8-8897-4029-b9b3-32806df7e06d-9282848916_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273b7e976d2b35c767f9012cb72"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2014-10-27",
   "slug": "1989",
+  "spotifyAlbumId": "5fy0X0JmZRZnVa2UEicIOl",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "1989-tv"

@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-35be24d2-5090-442c-aad0-581f6f0a2544/mbid-35be24d2-5090-442c-aad0-581f6f0a2544-37159614433_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-35be24d2-5090-442c-aad0-581f6f0a2544/mbid-35be24d2-5090-442c-aad0-581f6f0a2544-37159614433_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-35be24d2-5090-442c-aad0-581f6f0a2544/mbid-35be24d2-5090-442c-aad0-581f6f0a2544-37159614433_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647"
     }
   },
   "description": "Lover is Taylor Swift's seventh studio album, released August 23, 2019, and her first under Republic Records. It comprises eighteen tracks produced primarily by Swift and Jack Antonoff with additional contributions from Joel Little, Louis Bell, and Frank Dukes.",
@@ -12,6 +13,7 @@
   "producers": ["Taylor Swift", "Jack Antonoff", "Joel Little", "Louis Bell", "Frank Dukes"],
   "releaseDate": "2019-08-23",
   "slug": "lover",
+  "spotifyAlbumId": "1NAmidJlEaVgA3MpcPFYGq",
   "taylorsVersion": {
     "status": "not_applicable"
   },

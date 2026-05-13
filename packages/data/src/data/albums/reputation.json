@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e-17610493930_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e-17610493930_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e/mbid-91e96c04-9ced-4566-b273-b60b9c40ad3e-17610493930_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273da5d5aeeabacacc1263c0f4b"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2017-11-10",
   "slug": "reputation",
+  "spotifyAlbumId": "6DEjYFkNZh67HP7R9PSZvv",
   "taylorsVersion": {
     "status": "unreleased"
   },

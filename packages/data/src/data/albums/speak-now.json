@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d-8900360437_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d-8900360437_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d/mbid-b5e2fc4f-ae51-3a32-9a5a-31224a91807d-8900360437_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273d0eae3c1661a96570f0ca7bd"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2010-10-25",
   "slug": "speak-now",
+  "spotifyAlbumId": "6Ar2o9KCqcyYF9J0aQP3au",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "speak-now-tv"

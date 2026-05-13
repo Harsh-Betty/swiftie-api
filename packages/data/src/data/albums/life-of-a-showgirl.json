@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f-43194203866_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f-43194203866_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f/mbid-6d20d61d-922d-48f8-9d77-a014b679e97f-43194203866_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273d7812467811a7da6e6a44902"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2025-10-03",
   "slug": "life-of-a-showgirl",
+  "spotifyAlbumId": "4a6NzYL1YHRUgx9e3YZI6I",
   "taylorsVersion": {
     "status": "not_applicable"
   },

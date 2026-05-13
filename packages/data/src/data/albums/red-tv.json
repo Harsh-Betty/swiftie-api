@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-9929d215-1001-4b53-aae8-83b92e370de8/mbid-9929d215-1001-4b53-aae8-83b92e370de8-30689160459_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-9929d215-1001-4b53-aae8-83b92e370de8/mbid-9929d215-1001-4b53-aae8-83b92e370de8-30689160459_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-9929d215-1001-4b53-aae8-83b92e370de8/mbid-9929d215-1001-4b53-aae8-83b92e370de8-30689160459_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273318443aab3531a0558e79a4d"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2021-11-12",
   "slug": "red-tv",
+  "spotifyAlbumId": "6kZ42qRrzov54LcAk4onW9",
   "taylorsVersion": {
     "originalAlbumSlug": "red",
     "status": "not_applicable"

@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2-33805198179_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2-33805198179_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2/mbid-225e37e3-2e65-4b12-b3e1-0f7f55b4c7a2-33805198179_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273bb54dde68cd23e2a268ae0f5"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2022-10-21",
   "slug": "midnights",
+  "spotifyAlbumId": "151w1FgRZfnKZA9FEcg9Z3",
   "taylorsVersion": {
     "status": "not_applicable"
   },

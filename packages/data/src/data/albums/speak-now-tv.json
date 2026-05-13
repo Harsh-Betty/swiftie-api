@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e-35582451846_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e-35582451846_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e/mbid-a4b12757-fcae-493d-8769-cd46b5992c2e-35582451846_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b2730b04da4f224b51ff86e0a481"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2023-07-07",
   "slug": "speak-now-tv",
+  "spotifyAlbumId": "5AEDGbliTTfjOB8TSm1sxt",
   "taylorsVersion": {
     "originalAlbumSlug": "speak-now",
     "status": "not_applicable"

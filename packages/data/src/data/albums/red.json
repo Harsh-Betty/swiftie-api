@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d-30972212603_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d-30972212603_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d/mbid-22cdc2ff-de42-4286-af9c-0917720ea92d-30972212603_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b27396384c98ac4f3e7c2440f5b5"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2012-10-22",
   "slug": "red",
+  "spotifyAlbumId": "1EoDsNmgTLtmwe1BDAVxV5",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "red-tv"

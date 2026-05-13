@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a-36783816104_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a-36783816104_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a/mbid-8f6035ee-75b3-481e-b13d-0e1ef306122a-36783816104_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273904445d70d04eb24d6bb79ac"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2023-10-27",
   "slug": "1989-tv",
+  "spotifyAlbumId": "64LU4c1nfjz1t4VnGhagcg",
   "taylorsVersion": {
     "originalAlbumSlug": "1989",
     "status": "not_applicable"

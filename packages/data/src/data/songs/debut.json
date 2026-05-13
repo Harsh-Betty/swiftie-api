@@ -1,1 +1,324 @@
-[]
+[
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 232,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603008",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "4bea9dc0-11d3-4dc1-936b-73361da356eb",
+    "producers": [],
+    "slug": "tim-mcgraw",
+    "spotifyTrackId": "2Fn01AIMyHbha2ceNQeOqw",
+    "themes": [],
+    "title": "Tim McGraw",
+    "trackNumber": 1,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 173,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603004",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "180f3bb7-b251-4e79-9118-8ef0e1397b47",
+    "producers": [],
+    "slug": "picture-to-burn",
+    "spotifyTrackId": "4BYejINgfZF0qKDMEH2cim",
+    "themes": [],
+    "title": "Picture To Burn",
+    "trackNumber": 2,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 203,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603019",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "30629690-fadb-41bf-b59e-7685e61018fc",
+    "producers": [],
+    "slug": "teardrops-on-my-guitar-radio-single-remix",
+    "spotifyTrackId": "2TF4UtYreqNbQ6Z9AccldU",
+    "themes": [],
+    "title": "Teardrops On My Guitar - Radio Single Remix",
+    "trackNumber": 3,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 199,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603001",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "9a4c6749-6ac1-4412-a425-b3c46a27ade8",
+    "producers": [],
+    "slug": "a-place-in-this-world",
+    "spotifyTrackId": "1oR4MUBpyNrAViC8wPNpfm",
+    "themes": [],
+    "title": "A Place in this World",
+    "trackNumber": 4,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 239,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603020",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "25aa1b18-5e85-454e-a15b-145d5559d0fe",
+    "producers": [],
+    "slug": "cold-as-you",
+    "spotifyTrackId": "569sXXQ7t0jSdqHooi2yqs",
+    "themes": [],
+    "title": "Cold As You",
+    "trackNumber": 5,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 207,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603006",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "91823633-8f8a-41f1-a6b3-32b625bc2799",
+    "producers": [],
+    "slug": "the-outside",
+    "spotifyTrackId": "5Tj2MqcFMf60CaGsKbM1aq",
+    "themes": [],
+    "title": "The Outside",
+    "trackNumber": 6,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 248,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603007",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "9dd26e68-cdf4-40a3-9e46-5b606b0c304e",
+    "producers": [],
+    "slug": "tied-together-with-a-smile",
+    "spotifyTrackId": "2zzxwmoOBnXDT0KnJsoIWk",
+    "themes": [],
+    "title": "Tied Together with a Smile",
+    "trackNumber": 7,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 236,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603005",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "c9f876e3-548d-438c-848b-1ec6f47a4f88",
+    "producers": [],
+    "slug": "stay-beautiful",
+    "spotifyTrackId": "41sjzdjScVwnxnxADElts6",
+    "themes": [],
+    "title": "Stay Beautiful",
+    "trackNumber": 8,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 242,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603021",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "317375d5-149a-43f3-9037-db6caac1e96a",
+    "producers": [],
+    "slug": "shouldve-said-no",
+    "spotifyTrackId": "6CdaXOq1MWe2JHDalTG01d",
+    "themes": [],
+    "title": "Should've Said No",
+    "trackNumber": 9,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 213,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603022",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "d5a2b74f-781c-4501-960f-f788c8dc7e30",
+    "producers": [],
+    "slug": "marys-song-oh-my-my-my",
+    "spotifyTrackId": "2O8sogKJCfVZ4rotBv1vVF",
+    "themes": [],
+    "title": "Mary's Song (Oh My My My)",
+    "trackNumber": 10,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 201,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USCJY0603003",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "08f535c5-b651-4cc2-a8a8-349aa6060b16",
+    "producers": [],
+    "slug": "our-song",
+    "spotifyTrackId": "1j6gmK6u4WNI33lMZ8dC1s",
+    "themes": [],
+    "title": "Our Song",
+    "trackNumber": 11,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 213,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "producers": [],
+    "slug": "im-only-me-when-im-with-you",
+    "spotifyTrackId": "7CzxXgQXurKZCyHz9ufbo1",
+    "themes": [],
+    "title": "I'm Only Me When I'm With You",
+    "trackNumber": 12,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 203,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "producers": [],
+    "slug": "invisible",
+    "spotifyTrackId": "1k3PzDNjg38cWqOvL4M9vq",
+    "themes": [],
+    "title": "Invisible",
+    "trackNumber": 13,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 220,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "producers": [],
+    "slug": "a-perfectly-good-heart",
+    "spotifyTrackId": "0YgHuReCSPwTXYny7isLja",
+    "themes": [],
+    "title": "A Perfectly Good Heart",
+    "trackNumber": 14,
+    "writers": []
+  },
+  {
+    "albumSlug": "debut",
+    "discNumber": 1,
+    "durationSeconds": 179,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "producers": [],
+    "slug": "teardrops-on-my-guitar-pop-version",
+    "spotifyTrackId": "1hxLyjC9D9Jpw6EAPKqWv4",
+    "themes": [],
+    "title": "Teardrops on My Guitar - Pop Version",
+    "trackNumber": 15,
+    "writers": []
+  }
+]

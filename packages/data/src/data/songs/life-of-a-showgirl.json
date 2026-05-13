@@ -1,1 +1,266 @@
-[]
+[
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 226,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506436",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "8670a098-6ab7-4e18-8ac0-0ec7259151f8",
+    "producers": [],
+    "slug": "the-fate-of-ophelia",
+    "spotifyTrackId": "53iuhJlwXhSER5J2IYYv1W",
+    "themes": [],
+    "title": "The Fate of Ophelia",
+    "trackNumber": 1,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 208,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506437",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "11015ff3-b374-466c-a067-5b38e38c6d7d",
+    "producers": [],
+    "slug": "elizabeth-taylor",
+    "spotifyTrackId": "1jgTiNob5cVyXeJ3WgX5bL",
+    "themes": [],
+    "title": "Elizabeth Taylor",
+    "trackNumber": 2,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 235,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506438",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "4d711700-f1fe-4d45-89a8-879e450c5d06",
+    "producers": [],
+    "slug": "opalite",
+    "spotifyTrackId": "3yWuTOYDztXjZxdE2cIRUa",
+    "themes": [],
+    "title": "Opalite",
+    "trackNumber": 3,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 213,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506439",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "f6126fa7-b6c9-480f-a62f-d104cf360049",
+    "producers": [],
+    "slug": "father-figure",
+    "spotifyTrackId": "03bTIHJElXZ0O0jqOQvAbY",
+    "themes": [],
+    "title": "Father Figure",
+    "trackNumber": 4,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 246,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506440",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "74c92180-3008-4494-a8dc-795c888c31f3",
+    "producers": [],
+    "slug": "eldest-daughter",
+    "spotifyTrackId": "62HoDY1Km6lm47haFpUn9c",
+    "themes": [],
+    "title": "Eldest Daughter",
+    "trackNumber": 5,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 221,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506441",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "3541973c-7142-4c17-8774-26c5d8b25ec2",
+    "producers": [],
+    "slug": "ruin-the-friendship",
+    "spotifyTrackId": "62V2ZHslgQV98gH4AuVXnr",
+    "themes": [],
+    "title": "Ruin The Friendship",
+    "trackNumber": 6,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 164,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506442",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "f8787c53-1b20-4574-9912-cdf282dd5a7c",
+    "producers": [],
+    "slug": "actually-romantic",
+    "spotifyTrackId": "2x3mwb96B6TquRqMtbxUE1",
+    "themes": [],
+    "title": "Actually Romantic",
+    "trackNumber": 7,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 207,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506443",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "c99a743d-cdf7-4050-94a5-bfc88966f9b2",
+    "producers": [],
+    "slug": "wi-h-li-t",
+    "spotifyTrackId": "2TEQvxxQabwLQMqWMg1qGu",
+    "themes": [],
+    "title": "Wi$h Li$t",
+    "trackNumber": 8,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 151,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506444",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "bcee9426-bd2e-4969-981a-9dc3bdf9b0fa",
+    "producers": [],
+    "slug": "wood",
+    "spotifyTrackId": "5ylJtmaWPJ33cW3En7WOu0",
+    "themes": [],
+    "title": "Wood",
+    "trackNumber": 9,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 211,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506445",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "dc7e959c-a158-4f0c-9d31-88035ff60b15",
+    "producers": [],
+    "slug": "cancelled",
+    "spotifyTrackId": "1appZ3c336FkPvCuywfmrs",
+    "themes": [],
+    "title": "CANCELLED!",
+    "trackNumber": 10,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 182,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506446",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "83560713-6651-4b75-bad0-56699be0ec99",
+    "producers": [],
+    "slug": "honey",
+    "spotifyTrackId": "4qmFC3Jz5aQ0erlk2OSi2X",
+    "themes": [],
+    "title": "Honey",
+    "trackNumber": 11,
+    "writers": []
+  },
+  {
+    "albumSlug": "life-of-a-showgirl",
+    "discNumber": 1,
+    "durationSeconds": 242,
+    "features": [],
+    "isBonusTrack": false,
+    "isPromotionalRelease": false,
+    "isrc": "USUG12506447",
+    "isVaultTrack": false,
+    "lyrics": {
+      "sections": []
+    },
+    "moods": [],
+    "musicbrainzRecordingId": "545ab5b5-7963-4393-b4e9-cfff6dfda5ca",
+    "producers": [],
+    "slug": "the-life-of-a-showgirl-feat-sabrina-carpenter",
+    "spotifyTrackId": "5eXgqtg3T8Av0m1FUaGHex",
+    "themes": [],
+    "title": "The Life of a Showgirl (feat. Sabrina Carpenter)",
+    "trackNumber": 12,
+    "writers": []
+  }
+]

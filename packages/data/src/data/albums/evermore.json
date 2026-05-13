@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d-31907656502_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d-31907656502_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d/mbid-4e376d35-2492-43eb-80ba-88f36ca59c2d-31907656502_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b27333b8541201f1ef38941024be"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2020-12-11",
   "slug": "evermore",
+  "spotifyAlbumId": "2Xoteh7uEpea4TohMxjtaq",
   "taylorsVersion": {
     "status": "not_applicable"
   },

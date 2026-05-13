@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd-30448620452_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd-30448620452_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd/mbid-a58feec1-ad49-44e9-99d8-698e8c1973cd-30448620452_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b273a48964b5d9a3d6968ae3e0de"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2021-04-09",
   "slug": "fearless-tv",
+  "spotifyAlbumId": "4hDok0OAJd57SGIT8xuWJH",
   "taylorsVersion": {
     "originalAlbumSlug": "fearless",
     "status": "not_applicable"

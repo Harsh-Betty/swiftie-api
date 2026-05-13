@@ -2,7 +2,8 @@
   "coverArt": {
     "primary": "https://archive.org/download/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a-40731862566_thumb500.jpg",
     "sources": {
-      "coverArtArchive": "https://archive.org/download/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a-40731862566_thumb500.jpg"
+      "coverArtArchive": "https://archive.org/download/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a/mbid-6b36d317-b26f-496a-98d6-bb5dec9b173a-40731862566_thumb500.jpg",
+      "spotify": "https://i.scdn.co/image/ab67616d0000b27373b565ab9d713e8d5586aac2"
     }
   },
   "description": "",
@@ -12,6 +13,7 @@
   "producers": [],
   "releaseDate": "2008-11-11",
   "slug": "fearless",
+  "spotifyAlbumId": "2gP2LMVcIFgVczSJqn340t",
   "taylorsVersion": {
     "status": "released",
     "taylorsVersionAlbumSlug": "fearless-tv"
