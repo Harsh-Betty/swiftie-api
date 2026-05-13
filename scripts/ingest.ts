@@ -1,6 +1,7 @@
 import type { Album, Song } from '../packages/data/src/schemas';
 import { buildAdapterRegistry } from './ingest/adapters';
 import { parseArgs } from './ingest/args';
+import { bootstrapSongList, collectSongSeeds } from './ingest/bootstrap-songs';
 import { Summary } from './ingest/diff';
 import { parseEnv } from './ingest/env';
 import {
@@ -33,6 +34,7 @@ async function main(): Promise<void> {
     {
       adapters: adapters.map((a) => a.id),
       albums: slugs,
+      bootstrapSongs: args.bootstrapSongs,
       dryRun: args.dryRun,
     },
     'Ingest starting',
@@ -95,6 +97,11 @@ async function main(): Promise<void> {
         }
       }
       continue;
+    }
+
+    if (args.bootstrapSongs) {
+      const seeds = await collectSongSeeds(album, adapters, { env, logger }, summary);
+      songs = bootstrapSongList(album, songs, seeds, summary);
     }
 
     const updatedSongs: Song[] = [];

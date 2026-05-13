@@ -3,6 +3,7 @@ import { join } from 'node:path';
 import type { Album, Song } from '../../../packages/data/src/schemas';
 import { REPO_ROOT } from '../io';
 import type { Logger } from '../logger';
+import { type SongSeed, slugifySongTitle } from '../song-seed';
 import type { AdapterContext, DataSourceAdapter } from './adapter';
 
 const MB_BASE = 'https://musicbrainz.org/ws/2';
@@ -56,6 +57,7 @@ interface MBLabelInfo {
   label?: { name?: string } | null;
 }
 interface MBMedium {
+  position?: number;
   'track-count'?: number;
   tracks?: MBTrack[];
 }
@@ -125,6 +127,36 @@ async function lookupRelease(releaseId: string, logger: Logger): Promise<MBRelea
 
 const albumReleaseIdCache = new Map<string, string | null>();
 
+async function resolveReleaseId(album: Album, logger: Logger): Promise<string | null> {
+  if (!album.musicbrainzReleaseGroupId) return null;
+
+  let releaseId = albumReleaseIdCache.get(album.slug);
+  if (releaseId !== undefined) return releaseId;
+
+  try {
+    const rg = await mbFetch<MBReleaseGroupResponse>(
+      `/release-group/${album.musicbrainzReleaseGroupId}?inc=releases&fmt=json`,
+      logger,
+    );
+    const canonical = pickCanonicalRelease(rg.releases);
+    releaseId = canonical?.id ?? null;
+    albumReleaseIdCache.set(album.slug, releaseId);
+    return releaseId;
+  } catch (err) {
+    logger.warn(
+      { err: (err as Error).message, album: album.slug },
+      'musicbrainz release-group resolve failed',
+    );
+    albumReleaseIdCache.set(album.slug, null);
+    return null;
+  }
+}
+
+async function resolveRelease(album: Album, logger: Logger): Promise<MBRelease | null> {
+  const releaseId = await resolveReleaseId(album, logger);
+  return releaseId ? lookupRelease(releaseId, logger) : null;
+}
+
 function normalizeTitle(title: string): string {
   return title
     .toLowerCase()
@@ -135,11 +167,50 @@ function normalizeTitle(title: string): string {
     .trim();
 }
 
+function parseTrackNumber(track: MBTrack, fallback: number): number {
+  const parsed = Number.parseInt(track.number ?? '', 10);
+  return track.position ?? (Number.isFinite(parsed) && parsed > 0 ? parsed : fallback);
+}
+
+function mbTrackToSeed(album: Album, track: MBTrack, discNumber: number, fallbackTrack: number) {
+  const title = track.title ?? track.recording?.title;
+  if (!title) return null;
+
+  const length = track.recording?.length;
+  const durationSeconds = typeof length === 'number' && length > 0 ? Math.round(length / 1000) : 0;
+
+  return {
+    albumSlug: album.slug,
+    discNumber,
+    durationSeconds,
+    isrc: track.recording?.isrcs?.[0],
+    musicbrainzRecordingId: track.recording?.id,
+    slug: slugifySongTitle(title),
+    title,
+    trackNumber: parseTrackNumber(track, fallbackTrack),
+  } satisfies SongSeed;
+}
+
 export const musicbrainzAdapter: DataSourceAdapter = {
   id: 'musicbrainz',
   displayName: 'MusicBrainz',
   isAvailable() {
     return true;
+  },
+
+  async listAlbumTracks(album: Album, ctx: AdapterContext): Promise<SongSeed[]> {
+    const release = await resolveRelease(album, ctx.logger);
+    if (!release) return [];
+
+    const seeds: SongSeed[] = [];
+    release.media?.forEach((medium, mediumIdx) => {
+      const discNumber = medium.position ?? mediumIdx + 1;
+      medium.tracks?.forEach((track, trackIdx) => {
+        const seed = mbTrackToSeed(album, track, discNumber, trackIdx + 1);
+        if (seed) seeds.push(seed);
+      });
+    });
+    return seeds;
   },
 
   async enrichAlbum(album: Album, ctx: AdapterContext): Promise<Partial<Album>> {
@@ -189,30 +260,7 @@ export const musicbrainzAdapter: DataSourceAdapter = {
   },
 
   async enrichSong(song: Song, album: Album, ctx: AdapterContext): Promise<Partial<Song>> {
-    if (!album.musicbrainzReleaseGroupId) return {};
-
-    let releaseId = albumReleaseIdCache.get(album.slug);
-    if (releaseId === undefined) {
-      try {
-        const rg = await mbFetch<MBReleaseGroupResponse>(
-          `/release-group/${album.musicbrainzReleaseGroupId}?inc=releases&fmt=json`,
-          ctx.logger,
-        );
-        const canonical = pickCanonicalRelease(rg.releases);
-        releaseId = canonical?.id ?? null;
-        albumReleaseIdCache.set(album.slug, releaseId);
-      } catch (err) {
-        ctx.logger.warn(
-          { err: (err as Error).message, album: album.slug },
-          'musicbrainz release-group resolve failed',
-        );
-        albumReleaseIdCache.set(album.slug, null);
-        return {};
-      }
-    }
-    if (!releaseId) return {};
-
-    const release = await lookupRelease(releaseId, ctx.logger);
+    const release = await resolveRelease(album, ctx.logger);
     if (!release) return {};
 
     const target = normalizeTitle(song.title);

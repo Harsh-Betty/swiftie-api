@@ -3,6 +3,7 @@ import type { Album, Song } from '../../../packages/data/src/schemas';
 import type { IngestEnv } from '../env';
 import { REPO_ROOT, readJsonCache, writeJsonCache } from '../io';
 import type { Logger } from '../logger';
+import { type SongSeed, slugifySongTitle } from '../song-seed';
 import type { AdapterContext, DataSourceAdapter } from './adapter';
 
 const SPOTIFY_API = 'https://api.spotify.com/v1';
@@ -38,6 +39,10 @@ interface SpotifyAlbumResponse {
   total_tracks: number;
   images: SpotifyImage[];
   tracks: { items: SpotifyTrack[]; next: string | null };
+}
+interface SpotifyTracksPage {
+  items: SpotifyTrack[];
+  next: string | null;
 }
 interface SpotifySearchResponse {
   albums: { items: SpotifyAlbumResponse[] };
@@ -152,10 +157,10 @@ async function findAlbumBySearch(
   if (!search) return null;
 
   const targetYear = album.releaseDate.slice(0, 4);
-  const candidates = search.albums.items.filter(
+  const candidate = search.albums.items.find(
     (a) => a.release_date.startsWith(targetYear) && a.total_tracks === album.totalTracks,
   );
-  const chosen = candidates[0] ?? null;
+  const chosen = candidate ?? null;
   if (!chosen) {
     logger.warn(
       { album: album.slug, candidateCount: search.albums.items.length },
@@ -193,11 +198,48 @@ async function loadAlbumResponse(
   return response;
 }
 
+async function loadAlbumTracks(
+  album: Album,
+  env: IngestEnv,
+  logger: Logger,
+): Promise<SpotifyTrack[]> {
+  const response = await loadAlbumResponse(album, env, logger);
+  if (!response) return [];
+
+  const tracks = [...response.tracks.items];
+  let next = response.tracks.next;
+  while (next) {
+    const page = await spotifyFetch<SpotifyTracksPage>(next, env, logger);
+    if (!page) break;
+    tracks.push(...page.items);
+    next = page.next;
+  }
+  return tracks;
+}
+
+function spotifyTrackToSeed(album: Album, track: SpotifyTrack): SongSeed {
+  return {
+    albumSlug: album.slug,
+    discNumber: track.disc_number,
+    durationSeconds: Math.max(0, Math.round(track.duration_ms / 1000)),
+    isrc: track.external_ids?.isrc,
+    slug: slugifySongTitle(track.name),
+    spotifyTrackId: track.id,
+    title: track.name,
+    trackNumber: track.track_number,
+  };
+}
+
 export const spotifyAdapter: DataSourceAdapter = {
   id: 'spotify',
   displayName: 'Spotify',
   isAvailable(env: IngestEnv) {
     return Boolean(env.SPOTIFY_CLIENT_ID && env.SPOTIFY_CLIENT_SECRET);
+  },
+
+  async listAlbumTracks(album: Album, ctx: AdapterContext): Promise<SongSeed[]> {
+    const tracks = await loadAlbumTracks(album, ctx.env, ctx.logger);
+    return tracks.map((track) => spotifyTrackToSeed(album, track));
   },
 
   async enrichAlbum(album: Album, ctx: AdapterContext): Promise<Partial<Album>> {
