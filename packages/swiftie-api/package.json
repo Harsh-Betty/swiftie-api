@@ -1,0 +1,81 @@
+{
+  "name": "swiftie-api",
+  "version": "0.0.0",
+  "description": "A free, fan-made library for Taylor Swift discography, lyrics, eras, and quotes - offline-bundled data with an optional hosted client.",
+  "keywords": [
+    "taylor-swift",
+    "lyrics",
+    "music",
+    "api",
+    "swiftie"
+  ],
+  "license": "MIT",
+  "author": "Harshvardhan Singh",
+  "homepage": "https://github.com/Harsh-Betty/swiftie-api#readme",
+  "bugs": "https://github.com/Harsh-Betty/swiftie-api/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harsh-Betty/swiftie-api.git",
+    "directory": "packages/swiftie-api"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./albums/*": {
+      "import": {
+        "types": "./dist/albums/*.d.ts",
+        "default": "./dist/albums/*.js"
+      },
+      "require": {
+        "types": "./dist/albums/*.d.cts",
+        "default": "./dist/albums/*.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsdown --config-loader unrun",
+    "dev": "tsdown --config-loader unrun --watch",
+    "gen": "tsx scripts/generate-bundled-data.ts",
+    "typecheck": "pnpm gen && tsc --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "prepublishOnly": "pnpm build && pnpm validate",
+    "validate": "pnpm build && publint && attw --pack ."
+  },
+  "dependencies": {
+    "minisearch": "^7.2.0"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.2",
+    "@swiftie-api/data": "workspace:*",
+    "publint": "^0.3.12",
+    "tsdown": "^0.21.10",
+    "tsx": "^4.20.0"
+  }
+}
