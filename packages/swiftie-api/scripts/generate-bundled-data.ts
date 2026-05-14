@@ -106,7 +106,7 @@ export const ERAS: readonly Era[] = ${stableStringify(sortedEras)};
 
 async function writeAlbumModules(outDir: string): Promise<void> {
   const albumsDir = join(outDir, 'albums');
-  await rm(albumsDir, { recursive: true, force: true });
+  await rm(albumsDir, { recursive: true, force: true, maxRetries: 3, retryDelay: 100 });
   await mkdir(albumsDir, { recursive: true });
 
   const albums = await getAllAlbums();

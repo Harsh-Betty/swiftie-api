@@ -1,5 +1,7 @@
+import { join } from 'node:path';
 import { Module } from '@nestjs/common';
 import { APP_GUARD } from '@nestjs/core';
+import { ServeStaticModule } from '@nestjs/serve-static';
 import { ThrottlerGuard, ThrottlerModule } from '@nestjs/throttler';
 import { LoggerModule } from 'nestjs-pino';
 import { AppConfigModule } from './config/config.module';
@@ -13,6 +15,10 @@ import { LyricsModule } from './modules/lyrics/lyrics.module';
 import { MetaModule } from './modules/meta/meta.module';
 import { QuotesModule } from './modules/quotes/quotes.module';
 import { SongsModule } from './modules/songs/songs.module';
+
+// __dirname at runtime is .../packages/api/dist/src — two levels up lands at
+// .../packages/api, then `frontend/dist` resolves to the built SPA.
+const FRONTEND_DIST = join(__dirname, '..', '..', 'frontend', 'dist');
 
 @Module({
   imports: [
@@ -28,6 +34,13 @@ import { SongsModule } from './modules/songs/songs.module';
         { name: 'medium', ttl: 60_000, limit: 60 },
         { name: 'long', ttl: 3_600_000, limit: 1000 },
       ],
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: FRONTEND_DIST,
+      exclude: ['/api/(.*)', '/api/v1/(.*)'],
+      serveStaticOptions: {
+        fallthrough: true,
+      },
     }),
     HealthModule,
     MetaModule,

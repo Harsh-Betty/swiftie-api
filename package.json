@@ -10,8 +10,8 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "pnpm -r build",
-    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm --filter @swiftie-api/data build && pnpm --filter @swiftie-api/server-frontend build && pnpm --filter @swiftie-api/server build && pnpm --filter swiftie-api build",
+    "dev": "pnpm --filter @swiftie-api/data build && pnpm --filter @swiftie-api/data --filter @swiftie-api/server --filter @swiftie-api/server-frontend --parallel dev",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
