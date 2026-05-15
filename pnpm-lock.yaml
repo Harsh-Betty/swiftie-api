@@ -105,9 +105,6 @@ importers:
         specifier: ^4.4.3
         version: 4.4.3
     devDependencies:
-      '@arethetypeswrong/cli':
-        specifier: ^0.18.2
-        version: 0.18.2
       '@nestjs/cli':
         specifier: ^11.0.21
         version: 11.0.21(@swc/cli@0.8.1(@swc/core@1.15.33)(chokidar@4.0.3))(@swc/core@1.15.33)(@types/node@24.12.2)
@@ -120,15 +117,12 @@ importers:
       '@swc/core':
         specifier: ^1.15.33
         version: 1.15.33
+      '@swiftie-api/server-frontend':
+        specifier: workspace:*
+        version: link:frontend
       '@types/node':
         specifier: ^24.0.0
         version: 24.12.2
-      publint:
-        specifier: ^0.3.20
-        version: 0.3.20
-      tsdown:
-        specifier: ^0.21.10
-        version: 0.21.10(@arethetypeswrong/core@0.18.2)(publint@0.3.20)(typescript@5.9.3)
 
   packages/api/frontend:
     dependencies:

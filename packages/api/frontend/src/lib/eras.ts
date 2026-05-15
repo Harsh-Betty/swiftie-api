@@ -15,15 +15,20 @@ export interface Era {
 const FALLBACK_COLORS: Record<string, string> = {
   debut: '#5b9279',
   fearless: '#d4a017',
+  'fearless-tv': '#d4a017',
   'speak-now': '#5a3a87',
+  'speak-now-tv': '#5a3a87',
   red: '#b32d2e',
+  'red-tv': '#b32d2e',
   '1989': '#aac9e0',
+  '1989-tv': '#aac9e0',
   reputation: '#1a1a1a',
   lover: '#ffb6c1',
   folklore: '#8b8680',
   evermore: '#a0522d',
   midnights: '#1a2b4a',
-  'the-tortured-poets-department': '#c8b394',
+  'tortured-poets-department': '#c8b394',
+  'life-of-a-showgirl': '#e07f3a',
 };
 
 let cache: Era[] | null = null;
@@ -51,6 +56,6 @@ export function getCachedEras(): Era[] | null {
 }
 
 export function getEraColor(slug: string): string {
-  const era = cache?.find((e) => e.slug === slug);
+  const era = cache?.find((e) => e.slug === slug || e.albumSlugs.includes(slug));
   return era?.color ?? FALLBACK_COLORS[slug] ?? '#1a2b4a';
 }

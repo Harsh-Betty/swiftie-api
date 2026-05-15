@@ -23,7 +23,7 @@ a typed TypeScript npm package, so you can pick whichever fits your project.
 ### Hosted API
 
 ```bash
-curl https://swiftie-api.hrshvrdhn.com/v1/albums
+curl https://swiftie-api.hrshvrdhn.com/api/v1/albums
 ```
 
 ### npm package
@@ -35,14 +35,16 @@ pnpm add swiftie-api
 ```ts
 import { createClient } from 'swiftie-api';
 
-const client = createClient();
+const client = createClient({
+  baseUrl: 'https://swiftie-api.hrshvrdhn.com',
+});
 const albums = await client.albums.list();
 ```
 
 ## Documentation
 
 Full API reference is published at `/api/v1/docs` once the service is deployed.
-The OpenAPI schema lives in `packages/server` (@TODO: add later).
+The OpenAPI JSON is served by `packages/api` at `/api/v1/docs-json`.
 
 ## Updating data
 
@@ -88,7 +90,7 @@ adapter.
 
 ## Roadmap
 
-See [FEATURES.md](./FEATURES.md) (@TODO: Add roadmap) for the full roadmap.
+See [FEATURES.md](./FEATURES.md) for the current roadmap.
 
 ## Contributing
 

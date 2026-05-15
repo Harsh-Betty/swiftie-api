@@ -102,6 +102,8 @@ Only the album you import lands in your bundle.
 
 `SongMeta` is `Omit<Song, 'lyrics'>`. Sync APIs return `SongMeta` so the inlined metadata stays small; reach for `getAlbumWithSongs(slug)` or the per-album subpath when you need lyric text.
 
+Note: the first call to `searchLyrics` lazy-imports every per-album bundle to build the search index. If you import `searchLyrics` in the same module as a single-album subpath, expect all album chunks to land in your bundle.
+
 ### Hosted client
 
 | Method | HTTP target |

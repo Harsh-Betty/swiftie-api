@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@swiftie-api/data", "@swiftie-api/server"]
+  "ignore": ["@swiftie-api/data", "@swiftie-api/server", "@swiftie-api/server-frontend"]
 }

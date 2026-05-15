@@ -10,14 +10,14 @@
     "node": ">=24"
   },
   "scripts": {
-    "build": "pnpm --filter @swiftie-api/data build && pnpm --filter @swiftie-api/server-frontend build && pnpm --filter @swiftie-api/server build && pnpm --filter swiftie-api build",
-    "dev": "pnpm --filter @swiftie-api/data build && pnpm --filter @swiftie-api/data --filter @swiftie-api/server --filter @swiftie-api/server-frontend --parallel dev",
+    "build": "pnpm -r build",
+    "dev": "pnpm -F @swiftie-api/data build && pnpm -F @swiftie-api/data -F @swiftie-api/server -F @swiftie-api/server-frontend --parallel dev",
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",
-    "ingest": "tsx scripts/ingest.ts",
+    "ingest": "tsx --env-file-if-exists=.env scripts/ingest.ts",
     "changeset": "changeset",
     "version": "changeset version",
     "release": "pnpm build && changeset publish"

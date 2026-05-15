@@ -10,6 +10,7 @@ import { validateEnv } from './env.schema';
       isGlobal: true,
       cache: true,
       validate: validateEnv,
+      envFilePath: ['../../.env', '.env'],
     }),
   ],
   providers: [AppConfigService],

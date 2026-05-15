@@ -58,7 +58,6 @@ swiftie-api/
 ├── scripts/
 │   └── ingest.ts       # Local data enrichment script (MusicBrainz, Cover Art Archive, Spotify)
 ├── docs/
-│   ├── architecture.md
 │   └── data-pipeline.md
 ├── CONTRIBUTING.md     # this file
 ├── CREDITS.md

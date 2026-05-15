@@ -65,7 +65,7 @@
     "gen": "tsx scripts/generate-bundled-data.ts",
     "typecheck": "pnpm gen && tsc --noEmit",
     "test": "vitest run --passWithNoTests",
-    "prepublishOnly": "pnpm build && pnpm validate",
+    "prepublishOnly": "pnpm validate",
     "validate": "pnpm build && publint && attw --pack ."
   },
   "dependencies": {
