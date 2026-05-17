@@ -22,6 +22,7 @@ function curlFor(path: string) {
 export function EndpointCard({ method, path, summary, description }: Readonly<EndpointSpec>) {
   const [state, setState] = useState<RunState>({ kind: 'idle' });
   const [open, setOpen] = useState(false);
+  const resultId = `endpoint-result-${path.replaceAll(/[^a-z0-9]+/gi, '-')}`;
 
   async function run() {
     setState({ kind: 'loading' });
@@ -72,9 +73,11 @@ export function EndpointCard({ method, path, summary, description }: Readonly<En
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls={resultId}
             class="flex w-full items-center justify-between rounded-md border border-stone-200 bg-stone-50 px-3 py-2 text-xs text-stone-700 hover:bg-stone-100"
           >
-            <span>
+            <span aria-live="polite">
               {state.kind === 'loading' ? (
                 <>Fetching response…</>
               ) : state.kind === 'ok' ? (
@@ -89,10 +92,18 @@ export function EndpointCard({ method, path, summary, description }: Readonly<En
                 </>
               )}
             </span>
-            <span class="text-stone-500">{open ? '▾' : '▸'}</span>
+            <span
+              class={`h-2 w-2 border-r border-b border-stone-500 transition-transform ${
+                open ? 'rotate-45' : '-rotate-45'
+              }`}
+              aria-hidden="true"
+            />
           </button>
           {open && state.kind !== 'loading' && (
-            <pre class="mt-2 max-h-72 overflow-auto rounded-md border border-stone-200 bg-stone-950 p-3 font-mono text-xs leading-relaxed text-stone-100">
+            <pre
+              id={resultId}
+              class="mt-2 max-h-72 overflow-auto rounded-md border border-stone-200 bg-stone-950 p-3 font-mono text-xs leading-relaxed text-stone-100"
+            >
               {JSON.stringify(state.body, null, 2)}
             </pre>
           )}

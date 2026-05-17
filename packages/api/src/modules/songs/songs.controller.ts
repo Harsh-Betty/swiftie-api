@@ -51,7 +51,7 @@ export class SongsController {
   @ApiOperation({
     summary: 'Get a single song by slug.',
     description:
-      'Returns full song metadata, including structured lyrics by default. Pass ?withLyrics=false to omit the lyrics payload.',
+      'Returns full song metadata with a hasLyrics flag. Pass ?withLyrics=false to omit the lyrics payload.',
   })
   @ApiParam({ name: 'slug', description: 'Kebab-case song slug.', example: 'cruel-summer' })
   @ApiOkResponse({ type: SongResponseDto })

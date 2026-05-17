@@ -3,23 +3,31 @@ import { getSong, type ListSongsFilter, listSongs, type Song } from '@swiftie-ap
 import { assertSlug } from '../../common/util/assert-slug';
 
 export interface PagedSongs {
-  items: Song[];
+  items: SongResponse[];
   total: number;
 }
 
-export type SongWithoutLyrics = Omit<Song, 'lyrics'>;
+export type SongResponse = Song & { hasLyrics: boolean };
+export type SongWithoutLyrics = Omit<SongResponse, 'lyrics'>;
+
+export function toSongResponse(song: Song): SongResponse {
+  return {
+    ...song,
+    hasLyrics: song.lyrics.sections.length > 0,
+  };
+}
 
 @Injectable()
 export class SongsService {
   async list(filter: ListSongsFilter, limit: number, offset: number): Promise<PagedSongs> {
     const all = await listSongs(filter);
     return {
-      items: all.slice(offset, offset + limit),
+      items: all.slice(offset, offset + limit).map(toSongResponse),
       total: all.length,
     };
   }
 
-  async findOne(slug: string, withLyrics: boolean): Promise<Song | SongWithoutLyrics> {
+  async findOne(slug: string, withLyrics: boolean): Promise<SongResponse | SongWithoutLyrics> {
     assertSlug(slug, 'Song slug');
     let song: Song;
     try {
@@ -27,8 +35,9 @@ export class SongsService {
     } catch {
       throw new NotFoundException(`Song with slug "${slug}" was not found.`);
     }
-    if (withLyrics) return song;
-    const { lyrics: _omit, ...rest } = song;
+    const response = toSongResponse(song);
+    if (withLyrics) return response;
+    const { lyrics: _omit, ...rest } = response;
     return rest;
   }
 }

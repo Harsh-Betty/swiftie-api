@@ -195,10 +195,30 @@ export interface SearchLyricsOptions {
   limit?: number;
 }
 
+export interface ApiEnvelope<T> {
+  data: T;
+  meta: {
+    requestId: string;
+    timestamp: string;
+  };
+}
+
+export interface ErrorEnvelope {
+  error: {
+    code: string;
+    message: string;
+    details?: unknown;
+    requestId: string;
+    timestamp: string;
+  };
+}
+
 export interface PaginatedMeta {
   total: number;
   limit: number;
   offset: number;
+  requestId?: string;
+  timestamp?: string;
 }
 
 export interface PaginatedResult<T> {

@@ -72,6 +72,7 @@ export function bootstrapSongList(
 ): Song[] {
   if (seeds.length === 0) return [...songs];
 
+  const maxSongs = album.totalTracks > 0 ? album.totalTracks : Number.POSITIVE_INFINITY;
   const seedByPosition = new Map(seeds.map((seed) => [songSeedKey(seed), seed]));
   const seedBySlug = new Map(seeds.map((seed) => [seed.slug, seed]));
   const usedSeedKeys = new Set<string>();
@@ -92,6 +93,8 @@ export function bootstrapSongList(
 
   const occupiedPositions = new Set(updated.map((song) => songPositionKey(song)));
   for (const seed of seeds) {
+    if (updated.length >= maxSongs) break;
+
     const seedKey = songSeedKey(seed);
     if (usedSeedKeys.has(seedKey) || occupiedPositions.has(seedKey)) {
       continue;
@@ -119,5 +122,7 @@ export function bootstrapSongList(
     });
   }
 
-  return updated.sort((a, b) => a.discNumber - b.discNumber || a.trackNumber - b.trackNumber);
+  return updated
+    .sort((a, b) => a.discNumber - b.discNumber || a.trackNumber - b.trackNumber)
+    .slice(0, maxSongs);
 }

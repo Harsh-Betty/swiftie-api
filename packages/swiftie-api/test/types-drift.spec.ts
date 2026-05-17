@@ -14,13 +14,14 @@
 
 import type {
   Album as DataAlbum,
+  AlbumSlug as DataAlbumSlug,
   Era as DataEra,
   Quote as DataQuote,
   Song as DataSong,
 } from '@swiftie-api/data';
 import { describe, expect, it } from 'vitest';
 
-import type { Album, Era, Quote, Song } from '../src/shared/types.js';
+import type { Album, AlbumSlug, Era, Quote, Song } from '../src/shared/types.js';
 
 type IsEqual<A, B> =
   (<T>() => T extends A ? 1 : 2) extends <T>() => T extends B ? 1 : 2 ? true : false;
@@ -31,10 +32,17 @@ type _AlbumOk = Assert<IsEqual<DataAlbum, Album>>;
 type _SongOk = Assert<IsEqual<DataSong, Song>>;
 type _QuoteOk = Assert<IsEqual<DataQuote, Quote>>;
 type _EraOk = Assert<IsEqual<DataEra, Era>>;
+type _AlbumSlugOk = Assert<IsEqual<DataAlbumSlug, AlbumSlug>>;
 
 describe('public type drift guard', () => {
   it('hand-rolled types in src/shared/types.ts match @swiftie-api/data', () => {
-    const sentinel: [_AlbumOk, _SongOk, _QuoteOk, _EraOk] = [true, true, true, true];
-    expect(sentinel).toEqual([true, true, true, true]);
+    const sentinel: [_AlbumOk, _SongOk, _QuoteOk, _EraOk, _AlbumSlugOk] = [
+      true,
+      true,
+      true,
+      true,
+      true,
+    ];
+    expect(sentinel).toEqual([true, true, true, true, true]);
   });
 });

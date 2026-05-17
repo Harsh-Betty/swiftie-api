@@ -2,10 +2,11 @@ import { Injectable } from '@nestjs/common';
 import { AppConfigService, type RedditCredentials } from '../../../config/config.service';
 import { LruCacheService } from '../cache/lru-cache.service';
 import { HttpClient } from '../http/http.client';
+import { ClientCredentialsTokenCache } from './client-credentials-token-cache';
 import type { ImageProvider, ImageQueryContext, ImageResult } from './image-provider.interface';
-import { RedditTokenCache } from './reddit/token-cache';
 
 const REDDIT_OAUTH = 'https://oauth.reddit.com';
+const REDDIT_TOKEN_URL = 'https://www.reddit.com/api/v1/access_token';
 const RESPONSE_TTL_MS = 5 * 60_000;
 const IMAGE_EXT = /\.(jpe?g|png|gif|webp)(\?.*)?$/i;
 
@@ -32,7 +33,7 @@ export class RedditProvider implements ImageProvider {
   readonly missingEnv = ['REDDIT_CLIENT_ID', 'REDDIT_CLIENT_SECRET', 'REDDIT_USER_AGENT'] as const;
   readonly supportsSearch = true;
 
-  private tokens: RedditTokenCache | null = null;
+  private tokens: ClientCredentialsTokenCache | null = null;
   // Reddit requires a per-deployment user-agent (from creds), so the HttpClient is built lazily.
   private http: HttpClient | null = null;
 
@@ -113,9 +114,15 @@ export class RedditProvider implements ImageProvider {
     };
   }
 
-  private getTokens(creds: RedditCredentials): RedditTokenCache {
+  private getTokens(creds: RedditCredentials): ClientCredentialsTokenCache {
     if (this.tokens) return this.tokens;
-    this.tokens = new RedditTokenCache(creds.clientId, creds.clientSecret, creds.userAgent);
+    this.tokens = new ClientCredentialsTokenCache({
+      tokenUrl: REDDIT_TOKEN_URL,
+      serviceName: 'Reddit',
+      clientId: creds.clientId,
+      clientSecret: creds.clientSecret,
+      userAgent: creds.userAgent,
+    });
     return this.tokens;
   }
 

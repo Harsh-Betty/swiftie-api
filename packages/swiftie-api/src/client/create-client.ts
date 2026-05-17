@@ -1,15 +1,13 @@
-import type {
-  Album,
-  Era,
-  EraDetail,
-  LyricSearchResult,
-  Lyrics,
-  PaginatedResult,
-  Quote,
-  Song,
-} from '../shared/types.js';
+import type { Album, Era, EraDetail, PaginatedResult, Quote } from '../shared/types.js';
 import { resolveOptions, SwiftieHttpClient } from './http-client.js';
-import type { CreateClientOptions, SwiftieApiClient } from './types.js';
+import type {
+  CreateClientOptions,
+  HostedLyricsResponse,
+  HostedLyricsSearchResult,
+  ImageResult,
+  SongResponse,
+  SwiftieApiClient,
+} from './types.js';
 
 const API_PREFIX = '/api/v1';
 
@@ -28,28 +26,29 @@ export function createClient(options: CreateClientOptions): SwiftieApiClient {
           query as Record<string, unknown> | undefined,
         ),
       get: (slug) => http.get<Album>(`${API_PREFIX}/albums/${encodeURIComponent(slug)}`),
-      songs: (slug) => http.get<Song[]>(`${API_PREFIX}/albums/${encodeURIComponent(slug)}/songs`),
+      songs: (slug) =>
+        http.get<SongResponse[]>(`${API_PREFIX}/albums/${encodeURIComponent(slug)}/songs`),
     },
     songs: {
       list: (query) =>
-        http.getRaw<PaginatedResult<Song>>(
+        http.getRaw<PaginatedResult<SongResponse>>(
           `${API_PREFIX}/songs`,
           query as Record<string, unknown> | undefined,
         ),
       get: (slug, query) =>
-        http.get<Song>(
+        http.get<SongResponse>(
           `${API_PREFIX}/songs/${encodeURIComponent(slug)}`,
           query as Record<string, unknown> | undefined,
         ),
     },
     lyrics: {
       search: (q, query) =>
-        http.get<LyricSearchResult[]>(`${API_PREFIX}/lyrics/search`, {
+        http.get<HostedLyricsSearchResult[]>(`${API_PREFIX}/lyrics/search`, {
           q,
           ...((query ?? {}) as Record<string, unknown>),
         }),
       bySong: (songSlug) =>
-        http.get<Lyrics>(`${API_PREFIX}/lyrics/${encodeURIComponent(songSlug)}`),
+        http.get<HostedLyricsResponse>(`${API_PREFIX}/lyrics/${encodeURIComponent(songSlug)}`),
     },
     quotes: {
       list: (query) =>
@@ -61,6 +60,23 @@ export function createClient(options: CreateClientOptions): SwiftieApiClient {
     eras: {
       list: () => http.get<Era[]>(`${API_PREFIX}/eras`),
       get: (slug) => http.get<EraDetail>(`${API_PREFIX}/eras/${encodeURIComponent(slug)}`),
+    },
+    images: {
+      album: (slug, query) =>
+        http.get<ImageResult[]>(
+          `${API_PREFIX}/images/album/${encodeURIComponent(slug)}`,
+          query as Record<string, unknown> | undefined,
+        ),
+      song: (slug, query) =>
+        http.get<ImageResult[]>(
+          `${API_PREFIX}/images/song/${encodeURIComponent(slug)}`,
+          query as Record<string, unknown> | undefined,
+        ),
+      search: (q, query) =>
+        http.get<ImageResult[]>(`${API_PREFIX}/images/search`, {
+          q,
+          ...((query ?? {}) as Record<string, unknown>),
+        }),
     },
   };
 }

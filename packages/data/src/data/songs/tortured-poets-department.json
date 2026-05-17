@@ -350,26 +350,5 @@
     "title": "Clara Bow",
     "trackNumber": 16,
     "writers": []
-  },
-  {
-    "albumSlug": "tortured-poets-department",
-    "discNumber": 1,
-    "durationSeconds": 225,
-    "features": [],
-    "isBonusTrack": false,
-    "isPromotionalRelease": false,
-    "isrc": "USUG12401044",
-    "isVaultTrack": false,
-    "lyrics": {
-      "sections": []
-    },
-    "moods": [],
-    "musicbrainzRecordingId": "d0b283c4-93fc-42f1-8505-7937f0b80844",
-    "producers": [],
-    "slug": "the-manuscript",
-    "themes": [],
-    "title": "The Manuscript",
-    "trackNumber": 17,
-    "writers": []
   }
 ]

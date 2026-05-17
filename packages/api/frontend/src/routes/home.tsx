@@ -2,8 +2,8 @@ import { QuoteCard } from '../components/quote-card';
 
 const FEATURES = [
   {
-    title: 'Lyrics & Quotes',
-    body: 'Full structured lyrics with sections, plus a curated quote pool with a deterministic quote-of-the-day.',
+    title: 'Quotes & Metadata',
+    body: 'Curated quotes, explicit lyrics-availability metadata, and a deterministic quote-of-the-day.',
     color: 'var(--color-era-lover)',
   },
   {
@@ -29,8 +29,8 @@ export function Home() {
           A free, open-source API for the entire Taylor Swift discography.
         </h1>
         <p class="mt-6 max-w-2xl text-lg leading-relaxed text-stone-600">
-          Albums, songs, structured lyrics, eras, and curated quotes — served as a small REST API
-          and an npm package with offline-bundled data.
+          Albums, songs, eras, curated quotes, and metadata — served as a small REST API and an npm
+          package with offline-bundled data.
         </p>
         <div class="mt-8 flex flex-wrap gap-3">
           <a

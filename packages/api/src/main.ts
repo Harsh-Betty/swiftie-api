@@ -13,7 +13,6 @@ import {
 } from './app.constants';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
-import { LoggingInterceptor } from './common/interceptors/logging.interceptor';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
 import { AppConfigService } from './config/config.service';
 
@@ -35,12 +34,13 @@ async function bootstrap(): Promise<void> {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
+      forbidNonWhitelisted: true,
       transform: true,
     }),
   );
 
   app.useGlobalFilters(new HttpExceptionFilter());
-  app.useGlobalInterceptors(new LoggingInterceptor(), new TransformInterceptor(app.get(Reflector)));
+  app.useGlobalInterceptors(new TransformInterceptor(app.get(Reflector)));
 
   app.enableCors({
     origin: '*',
@@ -55,7 +55,7 @@ async function bootstrap(): Promise<void> {
     .setTitle('Swiftie API')
     .setDescription(
       [
-        'A free, open-source, fan-made API for Taylor Swift discography, lyrics, eras, and metadata.',
+        'A free, open-source, fan-made API for Taylor Swift discography, eras, quotes, and metadata.',
         '',
         `Powered by ${DATA_PACKAGE_NAME}@${dataVersion}.`,
         '',
@@ -73,7 +73,7 @@ async function bootstrap(): Promise<void> {
     .addTag('meta', 'API metadata and dataset counts.')
     .addTag('albums', "Studio albums and Taylor's Versions with filtering.")
     .addTag('songs', 'Individual songs with optional lyrics payload.')
-    .addTag('lyrics', 'Full-text lyrics search and per-song structured lyrics.')
+    .addTag('lyrics', 'Full-text search and structured lyric payloads when available.')
     .addTag('quotes', 'Curated and deterministic-daily lyric quotes.')
     .addTag('eras', 'High-level era groupings with hydrated album listings.')
     .addTag(

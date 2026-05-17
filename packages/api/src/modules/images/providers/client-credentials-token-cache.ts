@@ -1,6 +1,5 @@
 import { BadGatewayException } from '@nestjs/common';
 
-const TOKEN_URL = 'https://www.reddit.com/api/v1/access_token';
 const REFRESH_LEEWAY_MS = 60_000;
 
 interface TokenState {
@@ -13,15 +12,19 @@ interface TokenResponse {
   expires_in: number;
 }
 
-export class RedditTokenCache {
+export interface ClientCredentialsTokenCacheOptions {
+  tokenUrl: string;
+  serviceName: string;
+  clientId: string;
+  clientSecret: string;
+  userAgent: string;
+}
+
+export class ClientCredentialsTokenCache {
   private state: TokenState | null = null;
   private inflight: Promise<string> | null = null;
 
-  constructor(
-    private readonly clientId: string,
-    private readonly clientSecret: string,
-    private readonly userAgent: string,
-  ) {}
+  constructor(private readonly opts: ClientCredentialsTokenCacheOptions) {}
 
   async getToken(): Promise<string> {
     const now = Date.now();
@@ -31,19 +34,21 @@ export class RedditTokenCache {
     if (this.inflight) return this.inflight;
 
     this.inflight = (async () => {
-      const creds = Buffer.from(`${this.clientId}:${this.clientSecret}`).toString('base64');
-      const res = await fetch(TOKEN_URL, {
+      const creds = Buffer.from(`${this.opts.clientId}:${this.opts.clientSecret}`).toString(
+        'base64',
+      );
+      const res = await fetch(this.opts.tokenUrl, {
         method: 'POST',
         headers: {
           Authorization: `Basic ${creds}`,
           'Content-Type': 'application/x-www-form-urlencoded',
-          'User-Agent': this.userAgent,
+          'User-Agent': this.opts.userAgent,
         },
         body: 'grant_type=client_credentials',
       });
       if (!res.ok) {
         throw new BadGatewayException(
-          `Reddit token endpoint returned ${res.status} ${res.statusText}.`,
+          `${this.opts.serviceName} token endpoint returned ${res.status} ${res.statusText}.`,
         );
       }
       const json = (await res.json()) as TokenResponse;

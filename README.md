@@ -1,19 +1,19 @@
 # Swiftie API
 
-> A free, open-source, fan-made API for Taylor Swift discography, lyrics, eras, and metadata.
+> A free, open-source, fan-made API for Taylor Swift discography, eras, quotes, and metadata.
 
 [![npm version](https://img.shields.io/npm/v/swiftie-api.svg)](https://www.npmjs.com/package/swiftie-api)
 [![Build status](https://img.shields.io/github/actions/workflow/status/Harsh-Betty/swiftie-api/ci.yml?branch=main)](https://github.com/Harsh-Betty/swiftie-api/actions)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 Swiftie API is a community-maintained project that exposes a clean, typed interface to Taylor
-Swift's discography, lyrics, eras, and related metadata. It ships as both a hosted REST API and
+Swift's discography, eras, quotes, and related metadata. It ships as both a hosted REST API and
 a typed TypeScript npm package, so you can pick whichever fits your project.
 
 ## Features
 
 - Albums, tracks, and eras with stable identifiers.
-- Lyrics with provenance and licensing metadata.
+- Curated lyric quotes and explicit lyrics-availability metadata.
 - Cross-linked metadata via MusicBrainz and the Cover Art Archive.
 - Strongly-typed TypeScript client (zero runtime deps for consumers where possible).
 - Pluggable image provider interface for cover art.

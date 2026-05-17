@@ -34,16 +34,25 @@ export class LyricsService {
 
   async findBySong(songSlug: string): Promise<LyricsResponseDto> {
     assertSlug(songSlug, 'Song slug');
+    let song: Awaited<ReturnType<typeof getSong>>;
     try {
-      const song = await getSong(songSlug);
-      return {
-        songSlug: song.slug,
-        songTitle: song.title,
-        albumSlug: song.albumSlug,
-        sections: song.lyrics.sections,
-      };
+      song = await getSong(songSlug);
     } catch {
       throw new NotFoundException(`Song with slug "${songSlug}" was not found.`);
     }
+
+    if (song.lyrics.sections.length === 0) {
+      throw new NotFoundException({
+        code: 'LYRICS_UNAVAILABLE',
+        message: `Lyrics for song "${songSlug}" are not available.`,
+      });
+    }
+
+    return {
+      songSlug: song.slug,
+      songTitle: song.title,
+      albumSlug: song.albumSlug,
+      sections: song.lyrics.sections,
+    };
   }
 }

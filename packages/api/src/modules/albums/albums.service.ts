@@ -5,9 +5,9 @@ import {
   getSongsByAlbum,
   type ListAlbumsFilter,
   listAlbums,
-  type Song,
 } from '@swiftie-api/data';
 import { assertSlug } from '../../common/util/assert-slug';
+import { type SongResponse, toSongResponse } from '../songs/songs.service';
 
 export interface PagedAlbums {
   items: Album[];
@@ -33,11 +33,13 @@ export class AlbumsService {
     }
   }
 
-  async findSongs(slug: string): Promise<Song[]> {
+  async findSongs(slug: string): Promise<SongResponse[]> {
     assertSlug(slug, 'Album slug');
     // Confirm the album exists so we 404 on unknown album rather than empty array.
     await this.findOne(slug);
     const songs = await getSongsByAlbum(slug);
-    return [...songs].sort((a, b) => a.discNumber - b.discNumber || a.trackNumber - b.trackNumber);
+    return [...songs]
+      .sort((a, b) => a.discNumber - b.discNumber || a.trackNumber - b.trackNumber)
+      .map(toSongResponse);
   }
 }

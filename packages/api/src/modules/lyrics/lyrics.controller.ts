@@ -25,7 +25,7 @@ export class LyricsController {
   @ApiOperation({
     summary: 'Full-text search across all lyrics.',
     description:
-      'Searches every indexed lyric line using a MiniSearch index with prefix matching and light fuzziness. Returns hits sorted by relevance score. Match positions are returned as half-open character ranges `[start, end)`; clients render their own highlights.',
+      'Searches every available indexed lyric line using a MiniSearch index with prefix matching and light fuzziness. Returns hits sorted by relevance score. Match positions are returned as half-open character ranges `[start, end)`; clients render their own highlights.',
   })
   @ApiOkResponse({ type: [LyricsSearchResultDto] })
   @ApiBadRequestResponse({ description: 'Missing or invalid `q` parameter.' })
@@ -35,8 +35,9 @@ export class LyricsController {
 
   @Get(':songSlug')
   @ApiOperation({
-    summary: 'Get the full structured lyrics for a single song.',
-    description: 'Returns lyrics grouped by section (verse, chorus, bridge, etc.).',
+    summary: 'Get structured lyrics for a single song.',
+    description:
+      'Returns lyrics grouped by section when available. Known songs without lyric sections return LYRICS_UNAVAILABLE.',
   })
   @ApiParam({
     name: 'songSlug',

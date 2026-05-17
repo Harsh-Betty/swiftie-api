@@ -7,7 +7,7 @@ const toBool = ({ value }: { value: unknown }): unknown =>
 
 export class GetSongQueryDto {
   @ApiPropertyOptional({
-    description: 'Include structured lyrics in the response. Defaults to true.',
+    description: 'Include the lyrics payload in the response when available. Defaults to true.',
     default: true,
   })
   @IsOptional()

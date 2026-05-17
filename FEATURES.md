@@ -11,5 +11,6 @@ Near-term work:
 
 - Fill out endpoint-level e2e coverage.
 - Expand data quality checks around album and song metadata.
+- Resolve lyric provenance/licensing before exposing full lyric payloads.
 - Add CI/CD workflows in a future phase.
 - Continue improving documentation as the API stabilizes.

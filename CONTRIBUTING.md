@@ -117,7 +117,7 @@ packages/api/src/modules/images/providers/
 
 Every provider is a NestJS `@Injectable()` that implements the `ImageProvider` interface from `image-provider.interface.ts`. Adding a new source is four mechanical steps — no shared code is mutated:
 
-1. **Create the provider file** — copy `cover-art-archive.provider.ts` as a template. Implement `id`, `missingEnv`, `supportsSearch`, `isAvailable()`, and `fetch()`. Use the `HttpClient` wrapper in `../http/http.client.ts` for outbound calls and the shared `LruCacheService` for response caching. Keep the file under 150 lines — push OAuth token caches and other helpers into a sibling subfolder (see `spotify/token-cache.ts`).
+1. **Create the provider file** — copy `cover-art-archive.provider.ts` as a template. Implement `id`, `missingEnv`, `supportsSearch`, `isAvailable()`, and `fetch()`. Use the `HttpClient` wrapper in `../http/http.client.ts` for outbound calls and the shared `LruCacheService` for response caching. Keep the file under 150 lines; OAuth client-credentials providers can reuse `client-credentials-token-cache.ts`.
 2. **Add env var(s)** — extend `packages/api/src/config/env.schema.ts`, the `providers` getter in `packages/api/src/config/config.service.ts`, and `.env.example`.
 3. **Register it** — append the new class to two lists in `packages/api/src/modules/images/providers/provider-registry.ts`: `IMAGE_PROVIDER_CLASSES` and (if applicable) `AUTO_SOURCE_PRIORITY`. The module wiring picks them up automatically.
 4. **Extend the DTO enum** — add the new source to `ImageSourceEnum` and `SOURCE_TO_PROVIDER_ID` in `image-query.dto.ts`.
@@ -163,9 +163,10 @@ pnpm lint          # Biome lint check across all packages
 pnpm typecheck     # tsc --noEmit across all packages
 pnpm test          # Vitest across all packages
 pnpm build         # full production build
+pnpm validate:data # JSON parse, cross-reference, and track-count checks
 ```
 
-All four must pass. CI enforces the same checks, but catching failures locally is faster.
+All checks must pass. CI enforces the same checks, but catching failures locally is faster.
 
 ### Pull request
 

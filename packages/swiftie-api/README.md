@@ -1,8 +1,8 @@
 # swiftie-api
 
-> A free, fan-made library for Taylor Swift discography, lyrics, eras, and quotes — offline-bundled data with an optional hosted client.
+> A free, fan-made library for Taylor Swift discography, eras, quotes, and metadata — offline-bundled data with an optional hosted client.
 
-`swiftie-api` ships every album, song, and curated quote in the published bundle, so most calls are synchronous and zero-network. Per-album lyrics load lazily through tree-shake-friendly subpaths, and an optional `createClient` factory targets the hosted REST API when you want server-side filtering or shared state.
+`swiftie-api` ships every album, song, era, and curated quote in the published bundle, so most calls are synchronous and zero-network. Per-album subpaths let you load one album at a time, and an optional `createClient` factory targets the hosted REST API when you want server-side filtering or shared state.
 
 ## Install
 
@@ -28,7 +28,6 @@ import {
   getSong,
   getSongs,
   searchSongs,
-  searchLyrics,
   getRandomQuote,
   getDailyQuote,
   getQuotes,
@@ -42,8 +41,7 @@ const eras = getAllEras();                        // sync
 const todaysQuote = getDailyQuote();              // sync (deterministic by UTC date)
 const cardigan = getSong('cardigan');             // sync, SongMeta (lyrics omitted)
 
-const loverFull = await getAlbumWithSongs('lover');         // async, lyrics included
-const hits = await searchLyrics('cruel summer', { limit: 5 }); // async, lazy index
+const loverFull = await getAlbumWithSongs('lover');         // async, one album bundle
 ```
 
 ### Hosted mode
@@ -75,10 +73,12 @@ try {
 import lover from 'swiftie-api/albums/lover';
 
 console.log(lover.title, lover.songs.length);
-console.log(lover.songs[0].lyrics.sections);
+console.log(lover.songs[0].title);
 ```
 
 Only the album you import lands in your bundle.
+
+Full lyric text is not currently redistributed. Lyric-related APIs return results only for songs whose structured lyric sections are available in the dataset.
 
 ## API reference
 
@@ -100,7 +100,7 @@ Only the album you import lands in your bundle.
 | `getEra` | `(slug: string)` | `Era` | sync |
 | `getAllEras` | `()` | `Era[]` | sync |
 
-`SongMeta` is `Omit<Song, 'lyrics'>`. Sync APIs return `SongMeta` so the inlined metadata stays small; reach for `getAlbumWithSongs(slug)` or the per-album subpath when you need lyric text.
+`SongMeta` is `Omit<Song, 'lyrics'>`. Sync APIs return `SongMeta` so the inlined metadata stays small; reach for `getAlbumWithSongs(slug)` or the per-album subpath when you need the full song object for one album. Current published data does not include a full lyric corpus.
 
 Note: the first call to `searchLyrics` lazy-imports every per-album bundle to build the search index. If you import `searchLyrics` in the same module as a single-album subpath, expect all album chunks to land in your bundle.
 
@@ -132,7 +132,7 @@ All methods are async. Non-2xx responses throw `SwiftieApiError` with `status`, 
 
 ## Bundle size
 
-The eager metadata bundle holds every album + every song without lyrics + every quote + every era. Per-album lyrics are loaded on demand. Lyrics search lazy-imports all per-album chunks on first call, then caches the MiniSearch index.
+The eager metadata bundle holds every album + every song without lyrics + every quote + every era. Per-album song objects are loaded on demand. Lyrics search lazy-imports all per-album chunks on first call, then caches the MiniSearch index.
 
 After publishing, see [the bundlephobia page](https://bundlephobia.com/package/swiftie-api) for current numbers.
 

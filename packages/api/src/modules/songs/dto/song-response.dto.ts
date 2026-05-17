@@ -73,6 +73,9 @@ export class SongResponseDto {
   @ApiProperty()
   isPromotionalRelease!: boolean;
 
+  @ApiProperty({ description: 'Whether structured lyrics are available for this song.' })
+  hasLyrics!: boolean;
+
   @ApiPropertyOptional({ description: 'Original release date if different from album.' })
   releaseDate?: string;
 

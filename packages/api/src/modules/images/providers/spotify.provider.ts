@@ -3,10 +3,11 @@ import { AppConfigService } from '../../../config/config.service';
 import { LruCacheService } from '../cache/lru-cache.service';
 import { HttpClient } from '../http/http.client';
 import { IMAGES_USER_AGENT } from '../http/user-agent';
+import { ClientCredentialsTokenCache } from './client-credentials-token-cache';
 import type { ImageProvider, ImageQueryContext, ImageResult } from './image-provider.interface';
-import { SpotifyTokenCache } from './spotify/token-cache';
 
 const SPOTIFY_API = 'https://api.spotify.com/v1';
+const SPOTIFY_TOKEN_URL = 'https://accounts.spotify.com/api/token';
 const RESPONSE_TTL_MS = 5 * 60_000;
 const LICENSE_URL = 'https://developer.spotify.com/terms';
 
@@ -32,7 +33,7 @@ export class SpotifyProvider implements ImageProvider {
   readonly supportsSearch = false;
 
   private readonly http = new HttpClient({ userAgent: IMAGES_USER_AGENT });
-  private tokens: SpotifyTokenCache | null = null;
+  private tokens: ClientCredentialsTokenCache | null = null;
 
   constructor(
     private readonly config: AppConfigService,
@@ -83,11 +84,17 @@ export class SpotifyProvider implements ImageProvider {
     });
   }
 
-  private getTokenCache(): SpotifyTokenCache {
+  private getTokenCache(): ClientCredentialsTokenCache {
     if (this.tokens) return this.tokens;
     const creds = this.config.providers.spotify;
     if (!creds) throw new Error('Spotify credentials missing');
-    this.tokens = new SpotifyTokenCache(creds.clientId, creds.clientSecret, IMAGES_USER_AGENT);
+    this.tokens = new ClientCredentialsTokenCache({
+      tokenUrl: SPOTIFY_TOKEN_URL,
+      serviceName: 'Spotify',
+      clientId: creds.clientId,
+      clientSecret: creds.clientSecret,
+      userAgent: IMAGES_USER_AGENT,
+    });
     return this.tokens;
   }
 

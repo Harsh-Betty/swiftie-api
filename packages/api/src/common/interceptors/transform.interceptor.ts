@@ -18,6 +18,11 @@ export interface ResponseEnvelope<T> {
   };
 }
 
+interface ExistingEnvelope {
+  data: unknown;
+  meta: Record<string, unknown>;
+}
+
 @Injectable()
 export class TransformInterceptor<T> implements NestInterceptor<T, ResponseEnvelope<T> | T> {
   constructor(private readonly reflector: Reflector) {}
@@ -35,13 +40,23 @@ export class TransformInterceptor<T> implements NestInterceptor<T, ResponseEnvel
       map((payload) => {
         if (isRaw) return payload;
         if (this.isStreamingPayload(payload)) return payload;
-        if (this.isAlreadyEnveloped(payload)) return payload;
+        const timestamp = new Date().toISOString();
+        if (this.isAlreadyEnveloped(payload)) {
+          return {
+            ...payload,
+            meta: {
+              ...payload.meta,
+              requestId,
+              timestamp,
+            },
+          };
+        }
 
         return {
           data: payload,
           meta: {
             requestId,
-            timestamp: new Date().toISOString(),
+            timestamp,
           },
         } satisfies ResponseEnvelope<T>;
       }),
@@ -56,7 +71,11 @@ export class TransformInterceptor<T> implements NestInterceptor<T, ResponseEnvel
     return false;
   }
 
-  private isAlreadyEnveloped(value: unknown): boolean {
-    return typeof value === 'object' && value !== null && 'data' in value && 'meta' in value;
+  private isAlreadyEnveloped(value: unknown): value is ExistingEnvelope {
+    if (typeof value !== 'object' || value === null || !('data' in value) || !('meta' in value)) {
+      return false;
+    }
+    const meta = (value as { meta: unknown }).meta;
+    return typeof meta === 'object' && meta !== null && !Array.isArray(meta);
   }
 }

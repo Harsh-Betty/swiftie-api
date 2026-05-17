@@ -13,7 +13,7 @@ If you believe something is missing or incorrectly attributed, please [open an i
 | | |
 |---|---|
 | **Link** | https://github.com/sagesolar/Corpus-of-Taylor-Swift |
-| **What we use it for** | Primary lyrics dataset. The corpus covers albums through *The Tortured Poets Department* and *The Eras Tour*, and is the foundation for the lyrics and quotes data in `packages/data/src/data/`. |
+| **What we use it for** | Reference material for quote curation and lyric-availability planning. swiftie-api does not currently redistribute a full lyric corpus. |
 | **License** | Not explicitly licensed — used for fan/non-commercial purposes. Original lyrics are the intellectual property of Taylor Swift and her co-writers. |
 
 ---

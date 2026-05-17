@@ -14,6 +14,7 @@ interface ErrorEnvelope {
     message: string;
     details?: unknown;
     requestId: string;
+    timestamp: string;
   };
 }
 
@@ -42,8 +43,8 @@ export class HttpExceptionFilter implements ExceptionFilter {
     const request = ctx.getRequest<FastifyRequest>();
 
     const status = this.resolveStatus(exception);
-    const code = STATUS_CODE_MAP[status] ?? 'INTERNAL_ERROR';
-    const { message, details } = this.resolveBody(exception, status);
+    const { code: payloadCode, message, details } = this.resolveBody(exception, status);
+    const code = payloadCode ?? STATUS_CODE_MAP[status] ?? 'INTERNAL_ERROR';
     const requestId = (request.id as string | undefined) ?? 'unknown';
 
     if (status >= 500) {
@@ -61,6 +62,7 @@ export class HttpExceptionFilter implements ExceptionFilter {
         message,
         ...(details === undefined ? {} : { details }),
         requestId,
+        timestamp: new Date().toISOString(),
       },
     };
 
@@ -72,15 +74,19 @@ export class HttpExceptionFilter implements ExceptionFilter {
     return HttpStatus.INTERNAL_SERVER_ERROR;
   }
 
-  private resolveBody(exception: unknown, status: number): { message: string; details?: unknown } {
+  private resolveBody(
+    exception: unknown,
+    status: number,
+  ): { code?: string; message: string; details?: unknown } {
     if (exception instanceof HttpException) {
       const res = exception.getResponse();
       if (typeof res === 'string') return { message: res };
       if (res && typeof res === 'object') {
-        const obj = res as { message?: unknown; error?: unknown };
+        const obj = res as { code?: unknown; message?: unknown; error?: unknown };
+        const code = typeof obj.code === 'string' && obj.code.length > 0 ? obj.code : undefined;
         const message = this.coerceMessage(obj.message) ?? exception.message;
         const details = Array.isArray(obj.message) ? obj.message : undefined;
-        return { message, ...(details ? { details } : {}) };
+        return { ...(code ? { code } : {}), message, ...(details ? { details } : {}) };
       }
       return { message: exception.message };
     }

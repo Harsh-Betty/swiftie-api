@@ -47,12 +47,13 @@ const ENDPOINTS: EndpointSpec[] = [
   {
     method: 'GET',
     path: '/lyrics/cardigan',
-    summary: 'Structured lyrics for a song (sections + lines).',
+    summary: 'Lyrics payload when structured lyric sections are available.',
+    description: 'Returns LYRICS_UNAVAILABLE for known songs without lyric sections.',
   },
   {
     method: 'GET',
     path: '/lyrics/search?q=cruel+summer',
-    summary: 'Full-text lyric search across the entire catalogue.',
+    summary: 'Full-text search across available lyric sections.',
   },
   {
     method: 'GET',
@@ -77,7 +78,6 @@ const NPM_OFFLINE = `import {
   getAllAlbums,
   getAlbumWithSongs,
   getSong,
-  searchLyrics,
   getDailyQuote,
 } from 'swiftie-api';
 
@@ -85,8 +85,7 @@ const lover = getAlbum('lover');                  // sync
 const todaysQuote = getDailyQuote();              // sync, deterministic by UTC date
 const cardigan = getSong('cardigan');             // sync, SongMeta (no lyrics)
 
-const loverFull = await getAlbumWithSongs('lover');          // async, lyrics included
-const hits = await searchLyrics('cruel summer', { limit: 5 });`;
+const loverFull = await getAlbumWithSongs('lover');          // async, one album bundle`;
 
 const NPM_HOSTED = `import { createClient, SwiftieApiError } from 'swiftie-api';
 
@@ -109,7 +108,7 @@ try {
 const NPM_SUBPATH = `import lover from 'swiftie-api/albums/lover';
 
 console.log(lover.title, lover.songs.length);
-console.log(lover.songs[0].lyrics.sections);`;
+console.log(lover.songs[0].title);`;
 
 export function Examples() {
   const [tab, setTab] = useState<Tab>('api');
@@ -159,7 +158,7 @@ export function Examples() {
           <div class="grid gap-6">
             <SnippetBlock
               title="Offline mode (default)"
-              body="Bundles the full dataset and serves everything synchronously. Lyrics for the whole catalogue load lazily through tree-shake-friendly subpaths."
+              body="Bundles album, song, quote, and era metadata and serves most calls synchronously."
             >
               <CodeBlock code={NPM_OFFLINE} language="ts" label="offline.ts" />
             </SnippetBlock>

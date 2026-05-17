@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "A free, open-source, fan-made API for Taylor Swift discography, lyrics, eras, and metadata.",
+  "description": "A free, open-source, fan-made API for Taylor Swift discography, eras, quotes, and metadata.",
   "license": "MIT",
   "packageManager": "pnpm@10.13.1",
   "engines": {
@@ -17,6 +17,7 @@
     "format": "biome format --write .",
     "typecheck": "pnpm -r typecheck",
     "test": "pnpm -r test",
+    "validate:data": "tsx packages/data/scripts/validate-data.ts",
     "ingest": "tsx --env-file-if-exists=.env scripts/ingest.ts",
     "changeset": "changeset",
     "version": "changeset version",

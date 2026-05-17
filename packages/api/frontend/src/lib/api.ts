@@ -1,12 +1,6 @@
-const BASE = '/api/v1';
+import type { ApiEnvelope } from '../../../../swiftie-api/src/shared/types';
 
-interface ApiEnvelope<T> {
-  data: T;
-  meta?: {
-    requestId: string;
-    timestamp: string;
-  };
-}
+const BASE = '/api/v1';
 
 export class ApiError extends Error {
   constructor(

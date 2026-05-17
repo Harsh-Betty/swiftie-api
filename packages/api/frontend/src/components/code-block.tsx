@@ -28,7 +28,7 @@ export function CodeBlock({ code, language = 'bash', label }: Readonly<CodeBlock
           onClick={copy}
           class="rounded px-2 py-1 text-xs text-stone-300 transition-colors hover:bg-stone-800 hover:text-cream"
         >
-          {copied ? 'Copied' : 'Copy'}
+          <span aria-live="polite">{copied ? 'Copied' : 'Copy'}</span>
         </button>
       </div>
       <pre class="overflow-x-auto p-4 text-sm leading-relaxed text-stone-100">

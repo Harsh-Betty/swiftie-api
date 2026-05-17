@@ -125,6 +125,27 @@ describe('bootstrapSongList', () => {
     expect(twice.map((song) => song.slug)).toEqual(['first-song', 'second-song']);
   });
 
+  it('does not append seed rows past album.totalTracks', () => {
+    const result = bootstrapSongList(
+      album,
+      [],
+      [
+        ...seeds,
+        {
+          albumSlug: album.slug,
+          discNumber: 2,
+          durationSeconds: 210,
+          slug: 'alternate-edition-song',
+          title: 'Alternate Edition Song',
+          trackNumber: 1,
+        },
+      ],
+    );
+
+    expect(result).toHaveLength(album.totalTracks);
+    expect(result.map((song) => song.slug)).toEqual(['first-song', 'second-song']);
+  });
+
   it('merges Spotify and MusicBrainz track seeds by position with source priority', async () => {
     const adapters: DataSourceAdapter[] = [
       {
