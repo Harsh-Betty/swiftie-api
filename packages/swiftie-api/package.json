@@ -60,7 +60,7 @@
     "provenance": true
   },
   "scripts": {
-    "build": "tsdown --config-loader unrun",
+    "build": "pnpm gen && tsdown --config-loader unrun",
     "dev": "tsdown --config-loader unrun --watch",
     "gen": "tsx scripts/generate-bundled-data.ts",
     "typecheck": "pnpm gen && tsc --noEmit",

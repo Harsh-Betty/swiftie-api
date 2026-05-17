@@ -1,8 +1,6 @@
 import { readdirSync } from 'node:fs';
 import { defineConfig } from 'tsdown';
 
-import { generateBundledData } from './scripts/generate-bundled-data';
-
 const albumsSourceDir = '../data/src/data/albums';
 const slugs = readdirSync(albumsSourceDir)
   .filter((f) => f.endsWith('.json'))
@@ -28,9 +26,4 @@ export default defineConfig({
   sourcemap: true,
   publint: true,
   attw: true,
-  hooks: {
-    'build:prepare': async () => {
-      await generateBundledData();
-    },
-  },
 });
