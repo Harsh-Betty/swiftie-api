@@ -142,17 +142,26 @@ git checkout -b fix/your-fix-name
 
 Never commit directly to `main`.
 
-### Changesets — required for `swiftie-api` package changes
+### Changesets — required for any change that should reach npm consumers
 
-If your change touches anything under `packages/swiftie-api/` (new exports, bug fixes, breaking changes), you **must** include a changeset:
+The published `swiftie-api` package bundles data from `@swiftie-api/data` at build time (via `packages/swiftie-api/scripts/generate-bundled-data.ts`). That means data changes can affect what users get from npm, so the rule isn't "only `packages/swiftie-api/` matters" — it's about whether your change affects the published package.
+
+When you need a changeset:
+
+- **Source change inside `packages/swiftie-api/`** (new exports, bug fixes, breaking changes) → changeset required.
+- **Data change inside `packages/data/` that affects bundled output** (any JSON under `src/data/`, any schema, any loader change visible to consumers) → also a `swiftie-api` patch changeset.
+- **Internal-only change inside `packages/data/`** that doesn't affect what `generate-bundled-data.ts` consumes (e.g. renaming a private helper that isn't re-exported, fixing a typo in a test, or bumping a `packages/data/` devDependency) → no changeset.
+- **Change inside `packages/api/` or `packages/api/frontend/`** → no changeset (deployed via Railway, not published to npm).
+
+To add one:
 
 ```bash
 pnpm changeset
 ```
 
-Select the `swiftie-api` package, choose the correct bump type (`patch` / `minor` / `major`), and write a concise summary. Commit the generated `.changeset/*.md` file alongside your code.
+Select `swiftie-api`, choose the bump type (`patch` / `minor` / `major`), write a concise summary, and commit the generated `.changeset/*.md` file alongside your code.
 
-Changes scoped only to `@swiftie-api/data` or `@swiftie-api/server` do not need a changeset — those packages are private and are not published to npm.
+`@swiftie-api/data`, `@swiftie-api/server`, and `@swiftie-api/server-frontend` are private and are never published to npm.
 
 ### Pre-PR checklist
 
@@ -193,13 +202,16 @@ The full config is in `biome.json` at the repo root. If a rule is causing fricti
 
 ## Releasing
 
-Releases are handled by maintainers. The process is fully automated once a changeset is merged:
+**Contributors and agents do not release.** Releases are gated behind explicit maintainer action — the workflow is set up so nothing publishes on a normal PR merge.
 
-1. Merged PRs with changesets cause a "Version Packages" PR to be opened automatically by GitHub Actions.
-2. A maintainer reviews and merges the version PR.
-3. That merge triggers the release workflow, which publishes `swiftie-api` to npm with [provenance attestation](https://docs.npmjs.com/generating-provenance-statements).
+The flow:
 
-As a contributor, you only need to include the changeset. CI handles the rest.
+1. PRs that include a changeset get merged into `main` as usual.
+2. The `release.yml` workflow runs on each `main` push. If there are unconsumed changesets, it opens (or updates) a "Version Packages" PR with the bumps and `CHANGELOG.md` entries.
+3. A maintainer reviews and merges that "Version Packages" PR.
+4. That merge runs `release.yml` again, this time with versions already bumped — it tags the release and publishes `swiftie-api` to npm via [OIDC trusted publishing](https://docs.npmjs.com/trusted-publishers/) with [provenance attestation](https://docs.npmjs.com/generating-provenance-statements). No long-lived `NPM_TOKEN` is involved.
+
+As a contributor, you only need to include the changeset. As an agent, you stop after the changeset is committed — never attempt to merge the version PR or trigger the workflow manually.
 
 ---
 

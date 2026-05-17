@@ -22,7 +22,7 @@
     "ingest": "tsx --env-file-if-exists=.env scripts/ingest.ts",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.4",

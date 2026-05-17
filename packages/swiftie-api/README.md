@@ -145,5 +145,3 @@ Album and song metadata is curated by hand and cross-referenced against MusicBra
 [MIT](./LICENSE) © Harshvardhan Singh.
 
 Swiftie API is a fan-made project. It is **not** affiliated with, endorsed by, or sponsored by Taylor Swift, her management, her record labels, or any rights-holder.
-
-If it saved you an afternoon, [buy me a coffee](https://www.buymeacoffee.com/hrshvrdhn).

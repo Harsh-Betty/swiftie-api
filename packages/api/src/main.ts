@@ -59,8 +59,6 @@ async function bootstrap(): Promise<void> {
         '',
         `Powered by ${DATA_PACKAGE_NAME}@${dataVersion}.`,
         '',
-        'If you find this useful, [buy me a coffee](https://buymeacoffee.com/hrshvrdhn).',
-        '',
         '**Disclaimer:** Swiftie API is a fan-made project. It is not affiliated with, endorsed by, or sponsored by Taylor Swift, her management, her record labels, or any rights-holder.',
       ].join('\n'),
     )
