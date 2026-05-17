@@ -1,6 +1,6 @@
 {
   "name": "swiftie-api-monorepo",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "description": "A free, open-source, fan-made API for Taylor Swift discography, eras, quotes, and metadata.",
