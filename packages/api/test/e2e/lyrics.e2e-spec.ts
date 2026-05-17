@@ -1,14 +1,28 @@
-import { describe, it } from 'vitest';
+import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import request from 'supertest';
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { createTestApp } from './_setup';
 
-describe('GET /api/v1/lyrics/search', () => {
-  it.todo('returns hits sorted by score with nested song/album refs');
-  it.todo('includes matches[] with half-open ranges for each query term');
-  it.todo('caps results at the provided ?limit');
-  it.todo('400s when `q` is missing or empty');
-});
+describe('Lyrics e2e', () => {
+  let app: NestFastifyApplication;
 
-describe('GET /api/v1/lyrics/:songSlug', () => {
-  it.todo('returns structured lyrics grouped by section for a known song');
-  it.todo('404s for an unknown song slug');
-  it.todo('400s when slug is not kebab-case');
+  beforeAll(async () => {
+    app = await createTestApp();
+  });
+
+  afterAll(async () => {
+    await app.close();
+  });
+
+  it('GET /api/v1/lyrics/search?q=summer returns 200 with an array body', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/lyrics/search?q=summer');
+    expect(res.status).toBe(200);
+    expect(Array.isArray(res.body.data)).toBe(true);
+  });
+
+  it('GET /api/v1/lyrics/search without q returns 400', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/lyrics/search');
+    expect(res.status).toBe(400);
+    expect(res.body.error.code).toBe('BAD_REQUEST');
+  });
 });

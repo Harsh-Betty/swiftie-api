@@ -64,7 +64,8 @@
     "dev": "tsdown --config-loader unrun --watch",
     "gen": "tsx scripts/generate-bundled-data.ts",
     "typecheck": "pnpm gen && tsc --noEmit",
-    "test": "vitest run --passWithNoTests",
+    "test": "pnpm build && vitest run",
+    "test:coverage": "pnpm build && vitest run --coverage",
     "prepublishOnly": "pnpm validate",
     "validate": "pnpm build && publint && attw --pack ."
   },
@@ -74,6 +75,7 @@
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.2",
     "@swiftie-api/data": "workspace:*",
+    "msw": "^2.14.6",
     "publint": "^0.3.12",
     "tsdown": "^0.21.10",
     "tsx": "^4.20.0"

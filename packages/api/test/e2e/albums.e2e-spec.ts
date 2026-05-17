@@ -1,22 +1,37 @@
-import { describe, it } from 'vitest';
+import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import request from 'supertest';
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { createTestApp } from './_setup';
 
-// @TODO: Implement these later.
+describe('Albums e2e', () => {
+  let app: NestFastifyApplication;
 
-describe('GET /api/v1/albums', () => {
-  it.todo('returns canonical-only albums by default (matches meta.albums.canonical)');
-  it.todo("includes Taylor's Versions when ?includeTaylorsVersions=true");
-  it.todo('filters by era, type, taylorsVersion');
-  it.todo('respects limit/offset and reports total in meta');
-  it.todo('400s on a non-kebab `era` filter value');
-});
+  beforeAll(async () => {
+    app = await createTestApp();
+  });
 
-describe('GET /api/v1/albums/:slug', () => {
-  it.todo('returns full album metadata for a known slug');
-  it.todo('404s for an unknown slug');
-  it.todo('400s when slug is not kebab-case');
-});
+  afterAll(async () => {
+    await app.close();
+  });
 
-describe('GET /api/v1/albums/:slug/songs', () => {
-  it.todo('returns songs ordered by disc, then track number');
-  it.todo('404s for an unknown album slug');
+  it('GET /api/v1/albums returns an enveloped paginated list', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/albums');
+    expect(res.status).toBe(200);
+    expect(Array.isArray(res.body.data)).toBe(true);
+    expect(typeof res.body.meta.total).toBe('number');
+  });
+
+  it('GET /api/v1/albums/lover returns the Lover album', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/albums/lover');
+    expect(res.status).toBe(200);
+    expect(res.body.data.slug).toBe('lover');
+    expect(res.body.data.title).toBe('Lover');
+  });
+
+  it('GET /api/v1/albums/does-not-exist returns 404 with the error envelope', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/albums/does-not-exist');
+    expect(res.status).toBe(404);
+    expect(res.body.error.code).toBe('NOT_FOUND');
+    expect(typeof res.body.error.requestId).toBe('string');
+  });
 });

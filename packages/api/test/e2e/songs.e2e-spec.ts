@@ -1,15 +1,31 @@
-import { describe, it } from 'vitest';
+import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import request from 'supertest';
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { createTestApp } from './_setup';
 
-describe('GET /api/v1/songs', () => {
-  it.todo('returns canonical-only songs by default (matches meta.songs.canonical)');
-  it.todo("includes Taylor's Version tracks when ?includeTaylorsVersions=true");
-  it.todo('filters by album, vault, bonus, feature');
-  it.todo('respects limit/offset and reports total in meta');
-});
+describe('Songs e2e', () => {
+  let app: NestFastifyApplication;
 
-describe('GET /api/v1/songs/:slug', () => {
-  it.todo('returns the song with lyrics by default');
-  it.todo('omits lyrics when ?withLyrics=false');
-  it.todo('404s for an unknown slug');
-  it.todo('400s when slug is not kebab-case');
+  beforeAll(async () => {
+    app = await createTestApp();
+  });
+
+  afterAll(async () => {
+    await app.close();
+  });
+
+  it('GET /api/v1/songs/cruel-summer returns the song with hasLyrics', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/songs/cruel-summer');
+    expect(res.status).toBe(200);
+    expect(res.body.data.slug).toBe('cruel-summer');
+    expect(typeof res.body.data.hasLyrics).toBe('boolean');
+  });
+
+  it('GET /api/v1/songs/cruel-summer?withLyrics=false omits the lyrics payload', async () => {
+    const res = await request(app.getHttpServer()).get(
+      '/api/v1/songs/cruel-summer?withLyrics=false',
+    );
+    expect(res.status).toBe(200);
+    expect('lyrics' in res.body.data).toBe(false);
+  });
 });

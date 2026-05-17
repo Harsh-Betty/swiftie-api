@@ -1,18 +1,29 @@
-import { describe, it } from 'vitest';
+import type { NestFastifyApplication } from '@nestjs/platform-fastify';
+import request from 'supertest';
+import { afterAll, beforeAll, describe, expect, it } from 'vitest';
+import { createTestApp } from './_setup';
 
-describe('GET /api/v1/quotes/random', () => {
-  it.todo('returns a quote shape matching QuoteResponseDto');
-});
+describe('Quotes e2e', () => {
+  let app: NestFastifyApplication;
 
-describe('GET /api/v1/quotes/daily', () => {
-  it.todo('returns the same quote for the same UTC ?date');
-  it.todo('returns the same quote for two calls on the same UTC day without ?date');
-  it.todo('400s when ?date is not in YYYY-MM-DD format');
-  it.todo('400s when ?date is not a real calendar date (e.g. 2026-02-30)');
-});
+  beforeAll(async () => {
+    app = await createTestApp();
+  });
 
-describe('GET /api/v1/quotes', () => {
-  it.todo('filters by album, song, mood, featured');
-  it.todo('caps results at ?limit');
-  it.todo('400s on a non-kebab `album` or `song` filter value');
+  afterAll(async () => {
+    await app.close();
+  });
+
+  it('GET /api/v1/quotes/daily?date=2026-05-10 returns a Quote', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/quotes/daily?date=2026-05-10');
+    expect(res.status).toBe(200);
+    expect(typeof res.body.data.text).toBe('string');
+    expect(typeof res.body.data.songSlug).toBe('string');
+  });
+
+  it('GET /api/v1/quotes/daily?date=bogus returns 400', async () => {
+    const res = await request(app.getHttpServer()).get('/api/v1/quotes/daily?date=bogus');
+    expect(res.status).toBe(400);
+    expect(res.body.error.code).toBe('BAD_REQUEST');
+  });
 });
