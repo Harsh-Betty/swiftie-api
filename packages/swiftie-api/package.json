@@ -1,6 +1,6 @@
 {
   "name": "swiftie-api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A free, fan-made library for Taylor Swift discography, eras, quotes, and metadata - offline-bundled data with an optional hosted client.",
   "keywords": [
     "taylor-swift",
