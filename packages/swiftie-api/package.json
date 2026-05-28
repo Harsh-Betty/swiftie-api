@@ -76,8 +76,8 @@
     "@arethetypeswrong/cli": "^0.18.2",
     "@swiftie-api/data": "workspace:*",
     "msw": "^2.14.6",
-    "publint": "^0.3.12",
-    "tsdown": "^0.21.10",
-    "tsx": "^4.20.0"
+    "publint": "^0.3.21",
+    "tsdown": "^0.22.1",
+    "tsx": "^4.22.3"
   }
 }
